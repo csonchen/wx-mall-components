@@ -1,0 +1,37 @@
+.search {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 15px;
+  font-size: 14px;
+  background-color: #fff;
+}
+.bg {
+  box-sizing: border-box;
+  padding: 2px 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+.bg-oval {
+  border-radius: 20px;
+}
+.icon-search {
+  width: 14px;
+  height: 14px;
+  margin: 0 6px;
+}
+.icon-clear {
+  padding: 8px;
+}
+.input {
+  height: 30px;
+  line-height: 30px;
+  flex: 1;
+}
+.btn-cancel {
+  padding: 5px 0 5px 12px;
+}

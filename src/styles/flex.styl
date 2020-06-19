@@ -1,0 +1,77 @@
+.flex
+  display flex
+
+.flex-row
+  @extends .flex
+  flex-direction row
+
+.flex-column
+  @extends .flex
+  flex-direction column
+
+/**
+* 主轴方向
+*/
+// 左对齐
+.flex-left
+  justify-content flex-start  
+
+// 水平居中
+.flex-center
+  justify-content center
+
+// 右对齐
+.flex-right
+  justify-content flex-end
+
+// 两端对齐
+.flex-space-between
+  justify-content space-between
+
+// 元素四周留白
+.flex-space-around      
+  justify-content space-around
+
+/**
+* 交叉轴方向
+*/
+// 上对齐
+.flex-top 
+  align-items flex-start
+
+// 垂直居中
+.flex-middle
+  align-items center
+
+// 下对齐
+.flex-bottom
+  align-items flex-end
+
+// 拉伸
+.flex-stretch
+  align-items stretch  
+
+.flex-nowrap
+  flex-wrap nowrap
+
+.flex-wrap
+  flex-wrap wrap
+
+.flex-full
+  flex 1
+
+.flex-center-xy
+  @extends .flex
+  @extends .flex-center
+  @extends .flex-middle
+
+.flex-center-between
+  @extends .flex
+  @extends .flex-space-between
+  @extends .flex-middle      
+
+.flex-top-between
+  @extends .flex
+  @extends .flex-top 
+  @extends .flex-space-between
+  

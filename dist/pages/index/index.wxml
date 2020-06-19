@@ -1,1 +1,1 @@
-<view class="page">test222</view>
+<view class="page"> <view class="page__hd"><view class="page__title">小程序商城组件库</view><view class="page__desc">本项目主要是针对线上商城小程序日常用到的一些UI组件进行封装整理，抽离出大部分复用性高的组件供大家使用</view></view><view class="page__bd page__bd_spacing"><view class="li__view"><view class="flex li-container"><text class="flex-full">基础组件</text><text>ccc</text></view></view><view class="li__view">   </view></view></view>

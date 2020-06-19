@@ -1,0 +1,68 @@
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  opacity: 1;
+  z-index: 1;
+}
+/* layout */
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.page__hd {
+  padding: 40px;
+}
+.page__bd,
+.page__bd_spacing {
+  padding: 0 16px;
+}
+.page__ft {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-bottom: calc(10px [object Object]);
+  padding-bottom: calc(10px [object Object]);
+  text-align: center;
+}
+.page__ft image {
+  height: 19px;
+}
+.page__ft.j_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.page__title {
+  text-align: left;
+  color: cr-black;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.page__desc {
+  margin-top: 4px;
+  text-align: left;
+  color: cr-gray;
+  font-size: 14px;
+}
+/* widget */
+.li__view {
+  margin: 8px 0;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.li__view .li-container {
+  padding: 20px;
+}

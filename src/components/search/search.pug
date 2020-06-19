@@ -1,1 +1,29 @@
-view.search search...
+view.search 
+  view(class="bg {{ isOval ? 'bg-oval' : '' }}")
+    image.icon-search(
+      src="/images/icon_search_dark.png"
+    )
+    input.input(
+      disabled="{{disabled}}"
+      type="text"
+      value="{{value}}"
+      placeholder="{{placeholder}}"
+      placeholder-style="color:#cccccc"
+      maxlength="{{maxlength}}" 
+      focus="{{focus}}" 
+      confirm-type="search" 
+      bindinput="handleInput" 
+      bindconfirm="handleSearch" 
+      bindfocus="handleFocus" 
+      bindblur="handleBlur"
+    )
+    icon.icon-clear(
+      type="clear"
+      size="14"
+      bindtap="handleClear"
+      hidden="{{!showClear || !clearIconVisible}}"
+    )
+  text.btn-cancel(
+    bindtap="handleCancel"
+    wx:if!="{{!!value && showSearchText}}"
+  ) 取消

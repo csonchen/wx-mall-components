@@ -7,9 +7,10 @@ const rename = require('gulp-rename');
 const distPath = 'dist'
 // 源文件目录
 const pugFiles = 'src/**/*.pug'
-const stylusFiles = 'src/**/*.stylus'
+const stylusFiles = 'src/**/*.styl'
 const jsFiles = 'src/**/*.js'
 const jsonFiles = 'src/**/*.json'
+const imgFiles = 'src/**/*.?(png|jpg|gif)'
 
 
 // 源文件处理函数
@@ -43,6 +44,10 @@ function doJSON(path, distPath) {
     .pipe(gulp.dest(distPath))
 }
  
+function doImg(path, distPath) {
+  return gulp.src(path)
+    .pipe(gulp.dest(distPath))
+}
 
 // 创建任务
 gulp.task('pug', function() {
@@ -53,27 +58,33 @@ gulp.task('stylus', function() {
   return doStylus(stylusFiles, distPath)
 })
 
-gulp.task('js', function() {
+gulp.task('[copy js]', function() {
   return doJS(jsFiles, distPath)
 })
 
-gulp.task('json', function() {
+gulp.task('[copy json]', function() {
   return doJSON(jsonFiles, distPath)
 })
 
+gulp.task('[copy img]', function() {
+  return doImg(imgFiles, distPath)
+})
+
 gulp.task('watch', gulp.series(
-  gulp.parallel('pug', 'stylus', 'js', 'json'),
+  gulp.parallel('pug', 'stylus', '[copy js]', '[copy json]', '[copy img]'),
   () => {
     gulp.watch(pugFiles, gulp.parallel('pug')),
     gulp.watch(stylusFiles, gulp.parallel('stylus')),
-    gulp.watch(jsFiles, gulp.parallel('js')),
-    gulp.watch(jsonFiles, gulp.parallel('json'))
+    gulp.watch(jsFiles, gulp.parallel('[copy js]')),
+    gulp.watch(jsonFiles, gulp.parallel('[copy json]')),
+    gulp.watch(imgFiles, gulp.parallel('[copy img]'))
   }
 ))
 
 gulp.task('default', gulp.parallel(
   'pug',
   'stylus',
-  'js',
-  'json'
+  '[copy js]',
+  '[copy json]',
+  '[copy img]',
 ))
