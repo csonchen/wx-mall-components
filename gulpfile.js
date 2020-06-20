@@ -16,7 +16,9 @@ const imgFiles = 'src/**/*.?(png|jpg|gif)'
 // 源文件处理函数
 function doPug(path, distPath) {
   return gulp.src(path)
-    .pipe(pug())
+    .pipe(pug({
+      pretty: true
+    }))
     .pipe(rename({
       extname: '.wxml'
     }))

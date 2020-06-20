@@ -8,6 +8,18 @@ view.page
     view.li__view
       view.flex.li-container
         text.flex-full 基础组件
-        text ccc
 
-    view.li__view    
+    view.subli__view(
+      wx:for="{{baseData}}"
+      wx:key="index"
+      wx:for-item="item"
+    ) 
+      navigator.flex.li-container(
+        url="{{item.link}}"
+      )
+        text.flex-full {{item.value}}
+        image(
+          class="arr-icon"
+          src="/images/icon_extended_gray.png"
+        )
+           

@@ -66,3 +66,16 @@
 .li__view .li-container {
   padding: 20px;
 }
+.subli__view {
+  background-color: #fff;
+  overflow: hidden;
+  color: cr-gray;
+  margin-top: -8px;
+}
+.subli__view .li-container {
+  padding: 20px;
+}
+.arr-icon {
+  width: 14px;
+  height: 14px;
+}
