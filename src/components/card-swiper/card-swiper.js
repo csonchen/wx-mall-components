@@ -1,8 +1,11 @@
 Component({
   properties: {
-    list: [
-      { value: '1' },
-      { value: '2' },
-    ]
+    list: {
+      type: Array,
+      value: [
+        { value: '1' },
+        { value: '2' },
+      ]
+    }
   }
 })
