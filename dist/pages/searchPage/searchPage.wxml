@@ -6,5 +6,8 @@
   </view>
   <view class="page__bd page__bd_spacing">
     <search placeholder="输入搜索内容"></search>
+    <view>
+      <wxParse nodes="{{desc}}"></wxParse>
+    </view>
   </view>
 </view>

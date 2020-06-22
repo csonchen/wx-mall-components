@@ -8,10 +8,10 @@ const distPath = 'dist'
 // 源文件目录
 const pugFiles = 'src/**/*.pug'
 const stylusFiles = 'src/**/*.styl'
-const jsFiles = 'src/**/*.js'
-const jsonFiles = 'src/**/*.json'
-const imgFiles = 'src/**/*.?(png|jpg|gif)'
-
+const jsFiles = ["src/**/*.js", "!src/node_modules/**"]
+const jsonFiles = ["src/**/*.json",  "!src/node_modules/**"]
+const imgFiles = ["src/**/*.?(png|jpg|gif)",  "!src/node_modules/**"]
+const moduleFiles = 'src/node_modules/**/*'
 
 // 源文件处理函数
 function doPug(path, distPath) {
@@ -51,6 +51,13 @@ function doImg(path, distPath) {
     .pipe(gulp.dest(distPath))
 }
 
+function doModules(path, distPath) {
+  return gulp.src(path, {
+    base: './src'
+  })
+  .pipe(gulp.dest(distPath))
+}
+
 // 创建任务
 gulp.task('pug', function() {
   return doPug(pugFiles, distPath)
@@ -72,14 +79,19 @@ gulp.task('[copy img]', function() {
   return doImg(imgFiles, distPath)
 })
 
+gulp.task('[copy modules]', function() {
+  return doModules(moduleFiles, distPath)
+})
+
 gulp.task('watch', gulp.series(
-  gulp.parallel('pug', 'stylus', '[copy js]', '[copy json]', '[copy img]'),
+  gulp.parallel('pug', 'stylus', '[copy js]', '[copy json]', '[copy img]', '[copy modules]'),
   () => {
     gulp.watch(pugFiles, gulp.parallel('pug')),
     gulp.watch(stylusFiles, gulp.parallel('stylus')),
     gulp.watch(jsFiles, gulp.parallel('[copy js]')),
     gulp.watch(jsonFiles, gulp.parallel('[copy json]')),
-    gulp.watch(imgFiles, gulp.parallel('[copy img]'))
+    gulp.watch(imgFiles, gulp.parallel('[copy img]')),
+    gulp.watch(moduleFiles, gulp.parallel('[copy modules]'))
   }
 ))
 
@@ -89,4 +101,5 @@ gulp.task('default', gulp.parallel(
   '[copy js]',
   '[copy json]',
   '[copy img]',
+  '[copy modules]',
 ))
