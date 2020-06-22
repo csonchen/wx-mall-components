@@ -1,7 +1,7 @@
 
 <view class="page">
   <view class="page__hd"> 
-    <view class="page__title">Search</view>
+    <view class="page__title">search</view>
     <view class="page__desc">搜索输入框</view>
   </view>
   <view class="page__bd page__bd_spacing">

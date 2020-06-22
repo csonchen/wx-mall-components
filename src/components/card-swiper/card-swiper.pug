@@ -1,0 +1,17 @@
+view.card-swiper 
+  swiper.swiper-container(
+    current="{{current}}"
+    bindchange="handleChange"
+  )
+    swiper-item.swiper-item(
+      wx:for="{{list}}"
+      wx:key="index"
+      wx:for-item="item"
+    )
+      view(
+        class="{{current == index ? 'swiper-itembd__curent' : 'swiper-itembd'}}"
+      ) test + {{index}}
+
+  view.page-num.font12
+    text {{current + 1}} /
+    text {{list.length}}    

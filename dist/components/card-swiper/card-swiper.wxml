@@ -1,0 +1,12 @@
+
+<view class="card-swiper"> 
+  <swiper class="swiper-container" current="{{current}}" bindchange="handleChange">
+    <swiper-item class="swiper-item" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+      <view class="{{current == index ? 'swiper-itembd__curent' : 'swiper-itembd'}}">test + {{index}}</view>
+    </swiper-item>
+  </swiper>
+  <view class="page-num font12">
+    <text>{{current + 1}} /</text>
+    <text>{{list.length}}    </text>
+  </view>
+</view>

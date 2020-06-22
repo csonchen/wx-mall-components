@@ -23,3 +23,20 @@ view.page
           src="/images/icon_extended_gray.png"
         )
            
+    view.li__view
+      view.flex.li-container
+        text.flex-full 交互组件
+
+      view.subli__view(
+        wx:for="{{mutualData}}"
+        wx:key="index"
+        wx:for-item="item"
+      )
+        navigator.flex.li-container(
+          url="{{item.link}}"
+        )
+          text.flex-full {{item.value}}
+          image(
+            class="arr-icon"
+            src="/images/icon_extended_gray.png"
+          )         

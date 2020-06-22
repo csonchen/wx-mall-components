@@ -1,0 +1,35 @@
+.swiper-container {
+  height: 1000rpx;
+  width: 100%;
+}
+.swiper-item {
+  width: 80% !important;
+  margin-left: 10%;
+}
+.swiper-item__current {
+  width: 100%;
+  height: 100%;
+}
+.swiper-itembd__current {
+  animation: 0.3s scaleBig linear;
+  box-sizing: border-box;
+  height: 100%;
+}
+.swiper-itembd {
+  box-sizing: border-box;
+  height: 100%;
+  transform: scale(0.9);
+}
+.page-num {
+  color: #fff;
+  text-align: center;
+  margin-top: 40rpx;
+}
+@keyframes scaleBig {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/searchPage/searchPage",
-    "pages/toastPage/toastPage"
+    "pages/toastPage/toastPage",
+    "pages/cardSwiperPage/cardSwiperPage"
   ],
   "window": {
     "backgroundTextStyle": "light",

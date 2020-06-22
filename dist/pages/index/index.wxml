@@ -16,5 +16,16 @@
         <image class="arr-icon" src="/images/icon_extended_gray.png"></image>
       </navigator>
     </view>
+    <view class="li__view">
+      <view class="flex li-container">
+        <text class="flex-full">交互组件</text>
+      </view>
+      <view class="subli__view" wx:for="{{mutualData}}" wx:key="index" wx:for-item="item">
+        <navigator class="flex li-container" url="{{item.link}}">
+          <text class="flex-full">{{item.value}}</text>
+          <image class="arr-icon" src="/images/icon_extended_gray.png">        </image>
+        </navigator>
+      </view>
+    </view>
   </view>
 </view>
