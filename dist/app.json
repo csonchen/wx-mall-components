@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/searchPage/searchPage"
+    "pages/searchPage/searchPage",
+    "pages/toastPage/toastPage"
   ],
   "window": {
     "backgroundTextStyle": "light",

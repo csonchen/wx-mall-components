@@ -1,0 +1,32 @@
+view.toastCp
+  view.mask(
+    wx:if!="{{show && mask}}"
+  )
+
+  view(
+    class="toastContent {{ show ? 'toastCp_show' : 'toastCp_hide' }}"
+  )
+    block(wx:if="{{ image }}")
+      image.toastImg(
+        src="{{image}}"
+        style="{{imageStyle}}"
+      )
+      
+    block(wx:if="{{ !image }}")
+      image.toastImg(
+        wx:if="{{type === 'success'}}"
+        src="/images/icon_complete.png"
+      )
+      image.toastImg(
+        wx:if="{{type === 'warn'}}"
+        src="/images/icon_cash_error.png"
+      )  
+
+    text.toastText {{tips}}
+
+    view.toastPoint(
+      wx:if="{{showLoading}}"
+    )
+      text.pointItem  
+      text.pointItem  
+      text.pointItem  

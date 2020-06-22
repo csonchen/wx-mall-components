@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "toast": "/components/toast/toast",
+    "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse"
+  }
+}

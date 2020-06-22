@@ -58,12 +58,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
 					"id": -1,
 					"name": "pages/searchPage/searchPage",
 					"pathName": "pages/searchPage/searchPage",
+					"scene": null
+				}, 
+				{
+					"id": 0,
+					"name": "pages/toastPage/toastPage",
+					"pathName": "pages/toastPage/toastPage",
 					"scene": null
 				}
 			]

@@ -1,0 +1,18 @@
+
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">Toast</view>
+    <view class="page__desc">操作提示语弹出框</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <toast show="{{show}}" type="{{type}}" tips="{{tips}}" showLoading="{{showLoading}}"></toast>
+    <view class="flex flex-center-xy">
+      <view class="btn normal-btn mr15" bindtap="showEditToast">点击修改</view>
+      <view class="btn normal-btn mr15" bindtap="showLoadingToast">点击加载</view>
+      <view class="btn del-btn" bindtap="showDelToast">点击删除</view>
+    </view>
+    <view class="mt15">
+      <wxParse nodes="{{doc}}" language="html">  </wxParse>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+view.page
+  view.page__hd
+    view.page__title Toast
+    view.page__desc 操作提示语弹出框
+
+  view.page__bd.page__bd_spacing
+    toast(
+      show="{{show}}"
+      type="{{type}}"
+      tips="{{tips}}"
+      showLoading="{{showLoading}}"
+    )
+
+    view.flex.flex-center-xy
+      view.btn.normal-btn.mr15(
+        bindtap="showEditToast"
+      ) 点击修改
+      view.btn.normal-btn.mr15(
+        bindtap="showLoadingToast"
+      ) 点击加载
+      view.btn.del-btn(
+        bindtap="showDelToast"
+      ) 点击删除
+
+    view.mt15
+      wxParse(
+        nodes="{{doc}}"
+        language="html"
+      )   

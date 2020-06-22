@@ -29,8 +29,6 @@
 .page__ft {
   padding-top: 40px;
   padding-bottom: 10px;
-  padding-bottom: calc(10px [object Object]);
-  padding-bottom: calc(10px [object Object]);
   text-align: center;
 }
 .page__ft image {
