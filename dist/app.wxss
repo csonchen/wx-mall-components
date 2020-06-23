@@ -392,6 +392,9 @@
   width: 14px;
   height: 14px;
 }
+.bold {
+  font-weight: bold;
+}
 page {
   background: #f6f6f6;
 }

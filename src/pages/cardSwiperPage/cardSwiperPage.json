@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "card-swiper": "/components/card-swiper/card-swiper"
+    "card-swiper": "/components/card-swiper/card-swiper",
+    "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse"   
   }
 }

@@ -3,5 +3,18 @@ view.page
     view.page__title card-swiper
     view.page__desc 卡片滑动门交互展示效果
 
+  view
+    view
+      view.page__bd.mb15.bold 1. 平面滑动
+      card-swiper(showPage)
+
+    view.mt15  
+      view.page__bd.mb15.bold 2. 大小动画滑动
+      card-swiper(type="scale")
+
   view.page__bd.page__bd_spacing
-    card-swiper
+    view.mt15
+      wxParse(
+        nodes="{{doc}}"
+        language="html"
+      )    

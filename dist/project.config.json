@@ -59,7 +59,15 @@
 		},
 		"miniprogram": {
 			"current": 0,
-			"list": []
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/cardSwiperPage/cardSwiperPage",
+					"pathName": "pages/cardSwiperPage/cardSwiperPage",
+					"query": "",
+					"scene": null
+				}
+			]
 		}
 	}
 }

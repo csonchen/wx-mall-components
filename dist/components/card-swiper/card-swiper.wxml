@@ -2,11 +2,17 @@
 <view class="card-swiper"> 
   <swiper class="swiper-container" current="{{current}}" bindchange="handleChange">
     <swiper-item class="swiper-item" wx:for="{{list}}" wx:key="index" wx:for-item="item">
-      <view class="{{current == index ? 'swiper-itembd__curent' : 'swiper-itembd'}}">test + {{index}}</view>
+      <view class="{{current == index ? (type === 'scale' ? 'swiper-scale__current' : 'swiper-flatbd__current') : (type === 'scale' ? 'swiper-scale' : 'swiper-flatbd')}}">
+        <view class="swiper-item__inner" wx:if="{{!custom}}">{{item.value}}</view>
+        <view class="swiper-item__inner" wx:if="{{custom}}">
+          <slot name="custom-swiper"></slot>
+        </view>
+      </view>
     </swiper-item>
   </swiper>
-  <view class="page-num font12">
-    <text>{{current + 1}} /</text>
-    <text>{{list.length}}    </text>
+  <view class="page-num font12" wx:if="{{showPage}}">
+    <text>{{current + 1}}</text>
+    <text class="num-space">/</text>
+    <text>{{list.length}}</text>
   </view>
 </view>

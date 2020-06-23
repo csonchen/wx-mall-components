@@ -9,9 +9,19 @@ view.card-swiper
       wx:for-item="item"
     )
       view(
-        class="{{current == index ? 'swiper-itembd__curent' : 'swiper-itembd'}}"
-      ) test + {{index}}
+        class="{{current == index ? (type === 'scale' ? 'swiper-scale__current' : 'swiper-flatbd__current') : (type === 'scale' ? 'swiper-scale' : 'swiper-flatbd')}}"
+      )
+        view.swiper-item__inner(
+          wx:if="{{!custom}}"
+        ) {{item.value}}
+        view.swiper-item__inner(
+          wx:if="{{custom}}"
+        )
+          slot(name="custom-swiper")
 
-  view.page-num.font12
-    text {{current + 1}} /
-    text {{list.length}}    
+  view.page-num.font12(
+    wx:if="{{showPage}}"
+  )
+    text {{current + 1}}
+    text.num-space /
+    text {{list.length}}
