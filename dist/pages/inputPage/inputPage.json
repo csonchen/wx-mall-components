@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "form-input": "/components/form-input/form-input",
+    "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse"
+  }
+}

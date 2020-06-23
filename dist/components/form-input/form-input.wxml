@@ -1,0 +1,9 @@
+
+<view class="form-input flex-center-between" bindtap="handleClick">
+  <view class="cell-left">{{title}}</view>
+  <view class="flex-full cell-right flex flex-middle flex-right">
+    <input class="input-val" wx:if="{{input}}" placeholder="{{placeholder}}" placeholder-class="input-place"/>
+    <text class="cell-foot">{{foot}}</text>
+    <image class="link-icon" wx:if="{{link}}" src="/images/icon_extended_gray.png"></image>
+  </view>
+</view>

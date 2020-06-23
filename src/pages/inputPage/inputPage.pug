@@ -1,0 +1,26 @@
+view.page
+  view.page__hd
+    view.page__title form-input
+    view.page__desc 表单输入框
+
+  view.page__bd.page__bd_spacing  
+    form-input(
+      title="我是普通文本"
+      foot="看看我"
+    )
+    form-input(
+      title="我是链接"
+      foot="点我吧"
+      link="https://www.baidu.com"
+    )
+    form-input(
+      title="我是文本输入框"
+      placeholder="点我输入内容吧"
+      input
+    )
+
+    view.mt15
+      wxParse(
+        nodes="{{doc}}"
+        language="html"
+      )

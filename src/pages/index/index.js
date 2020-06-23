@@ -6,6 +6,9 @@ Page({
     ],
     mutualData: [
       { value: '卡片滑动交互', link: '/pages/cardSwiperPage/cardSwiperPage' }
+    ],
+    formData: [
+      { value: '输入框', link: '/pages/inputPage/inputPage' }
     ]
   }
 })

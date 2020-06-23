@@ -1,0 +1,17 @@
+view.form-input.flex-center-between(
+  bindtap="handleClick"
+)
+  view.cell-left {{title}}
+  view.flex-full.cell-right.flex.flex-middle.flex-right
+    input(
+      wx:if="{{input}}"
+      class="input-val"
+      placeholder='{{placeholder}}'
+      placeholder-class='input-place'
+    )
+    text.cell-foot {{foot}}
+    image(
+      wx:if="{{link}}"
+      class="link-icon"
+      src="/images/icon_extended_gray.png"
+    )

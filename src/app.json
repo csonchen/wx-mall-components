@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/searchPage/searchPage",
     "pages/toastPage/toastPage",
-    "pages/cardSwiperPage/cardSwiperPage"
+    "pages/cardSwiperPage/cardSwiperPage",
+    "pages/inputPage/inputPage"
   ],
   "window": {
     "backgroundTextStyle": "light",

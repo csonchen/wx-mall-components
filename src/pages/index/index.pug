@@ -1,4 +1,4 @@
-view.page 
+view.page
   view.page__hd
     view.page__title 小程序商城组件库
 
@@ -39,4 +39,22 @@ view.page
         image(
           class="arr-icon"
           src="/images/icon_extended_gray.png"
-        )         
+        )
+
+    view.li__view
+      view.flex.li-container
+        text.flex-full 表单组件
+
+    view.subli__view(
+      wx:for="{{formData}}"
+      wx:key="index"
+      wx:for-item="item"
+    )
+      navigator.flex.li-container(
+        url="{{item.link}}"
+      )
+        text.flex-full {{item.value}}
+        image(
+          class="arr-icon"
+          src="/images/icon_extended_gray.png"
+        )
