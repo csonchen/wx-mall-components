@@ -1,0 +1,59 @@
+@import "../../styles/flex.styl";
+@import "../../styles/define.styl";
+
+.date-picker 
+  background #fff
+  position fixed
+  bottom 0
+  left 0
+  right 0
+  background #fff
+
+.mask
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background rgba(0, 0, 0, .5)
+  z-index 1
+
+.picker-head
+  height 50px
+  line-height 50px
+  padding 0 12px
+  background #f6f6f6
+  border-radius 12px 12px 0 0
+  
+.picker-container
+  position relative
+  z-index 2  
+  background #fff
+
+.title
+  font-weight bold
+
+.cancel
+  color cr-black
+
+.confirm
+  color cr-blue  
+
+.picker-timer
+  padding 8px 12px
+
+.timer-input
+  border 1rpx solid #b6b6b6
+  border-radius 6px
+  padding 6px 12px
+  text-align center
+  font-size 12px
+  color #999
+  &:active
+    color cr-blue
+    border 1rpx solid cr-blue
+
+.timer-tips
+  margin 0 10px    
+  font-size 12px 
+  color #a3a3a3

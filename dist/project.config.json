@@ -86,6 +86,13 @@
 					"pathName": "pages/dropdownSelectPage/dropdownSelectPage",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pages/datePickerPage/datePickerPage",
+					"pathName": "pages/datePickerPage/datePickerPage",
+					"query": "",
+					"scene": null
 				}					
 			]
 		}

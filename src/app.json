@@ -8,6 +8,7 @@
 
     "pages/cardSwiperPage/cardSwiperPage",
     "pages/richTextPage/richTextPage",
+    "pages/datePickerPage/datePickerPage",
 
     "pages/inputPage/inputPage"
   ],

@@ -1,0 +1,10 @@
+
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">date-picker</view>
+    <view class="page__desc">时间日期选择器</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <date-picker class="ddd"></date-picker>
+  </view>
+</view>

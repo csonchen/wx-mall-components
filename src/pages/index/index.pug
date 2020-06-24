@@ -9,52 +9,55 @@ view.page
       view.flex.li-container
         text.flex-full 基础组件
 
-    view.subli__view(
-      wx:for="{{baseData}}"
-      wx:key="index"
-      wx:for-item="item"
-    ) 
-      navigator.flex.li-container(
-        url="{{item.link}}"
-      )
-        text.flex-full {{item.value}}
-        image(
-          class="arr-icon"
-          src="/images/icon_extended_gray.png"
+    view.subli-container
+      view.subli__view(
+        wx:for="{{baseData}}"
+        wx:key="index"
+        wx:for-item="item"
+      ) 
+        navigator.flex.li-container(
+          url="{{item.link}}"
         )
+          text.flex-full {{item.value}}
+          image(
+            class="arr-icon"
+            src="/images/icon_extended_gray.png"
+          )
            
     view.li__view
       view.flex.li-container
         text.flex-full 交互组件
 
-    view.subli__view(
-      wx:for="{{mutualData}}"
-      wx:key="index"
-      wx:for-item="item"
-    )
-      navigator.flex.li-container(
-        url="{{item.link}}"
+    view.subli-container
+      view.subli__view(
+        wx:for="{{mutualData}}"
+        wx:key="index"
+        wx:for-item="item"
       )
-        text.flex-full {{item.value}}
-        image(
-          class="arr-icon"
-          src="/images/icon_extended_gray.png"
+        navigator.flex.li-container(
+          url="{{item.link}}"
         )
+          text.flex-full {{item.value}}
+          image(
+            class="arr-icon"
+            src="/images/icon_extended_gray.png"
+          )
 
     view.li__view
       view.flex.li-container
         text.flex-full 表单组件
 
-    view.subli__view(
-      wx:for="{{formData}}"
-      wx:key="index"
-      wx:for-item="item"
-    )
-      navigator.flex.li-container(
-        url="{{item.link}}"
+    view.subli-container
+      view.subli__view(
+        wx:for="{{formData}}"
+        wx:key="index"
+        wx:for-item="item"
       )
-        text.flex-full {{item.value}}
-        image(
-          class="arr-icon"
-          src="/images/icon_extended_gray.png"
+        navigator.flex.li-container(
+          url="{{item.link}}"
         )
+          text.flex-full {{item.value}}
+          image(
+            class="arr-icon"
+            src="/images/icon_extended_gray.png"
+          )

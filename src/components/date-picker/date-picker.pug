@@ -1,0 +1,21 @@
+view.date-picker
+  view.mask
+
+  view.picker-container
+    view.picker-head.flex-center-between
+      text.cancel 取消
+      text.title 选择时间
+      text.confirm 确认
+
+    view.picker-timer.flex-center-between
+      view.flex-full.begin.timer-input 2018.01.01
+      text.timer-tips 至
+      view.flex-full.end.timer-input  2018.01.01
+    
+    picker(
+      mode="date"
+      value="{{date}}"
+      start="2015-09-01"
+      end="2017-09-01"
+    )
+      view.picker {{date}}

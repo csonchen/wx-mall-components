@@ -1,0 +1,19 @@
+
+<view class="date-picker">
+  <view class="mask"></view>
+  <view class="picker-container">
+    <view class="picker-head flex-center-between">
+      <text class="cancel">取消</text>
+      <text class="title">选择时间</text>
+      <text class="confirm">确认</text>
+    </view>
+    <view class="picker-timer flex-center-between">
+      <view class="flex-full begin timer-input">2018.01.01</view>
+      <text class="timer-tips">至</text>
+      <view class="flex-full end timer-input"> 2018.01.01</view>
+    </view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01">
+      <view class="picker">{{date}}</view>
+    </picker>
+  </view>
+</view>
