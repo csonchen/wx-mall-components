@@ -12,6 +12,7 @@ const jsFiles = ["src/**/*.js", "!src/node_modules/**"]
 const jsonFiles = ["src/**/*.json",  "!src/node_modules/**"]
 const imgFiles = ["src/**/*.?(png|jpg|gif)",  "!src/node_modules/**"]
 const moduleFiles = 'src/node_modules/**/*'
+const templateFiles = "src/templates/*.pug"
 
 // 源文件处理函数
 function doPug(path, distPath) {
@@ -86,7 +87,7 @@ gulp.task('[copy modules]', function() {
 gulp.task('watch', gulp.series(
   gulp.parallel('pug', 'stylus', '[copy js]', '[copy json]', '[copy img]', '[copy modules]'),
   () => {
-    gulp.watch(pugFiles, gulp.parallel('pug')),
+    gulp.watch(pugFiles.concat(templateFiles), gulp.parallel('pug')),
     gulp.watch(stylusFiles, gulp.parallel('stylus')),
     gulp.watch(jsFiles, gulp.parallel('[copy js]')),
     gulp.watch(jsonFiles, gulp.parallel('[copy json]')),
@@ -94,8 +95,6 @@ gulp.task('watch', gulp.series(
     gulp.watch(moduleFiles, gulp.parallel('[copy modules]'))
   }
 ))
-
-
 
 gulp.task('default', gulp.parallel(
   'pug',
