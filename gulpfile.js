@@ -6,7 +6,7 @@ const rename = require('gulp-rename');
 // 输出文件目录
 const distPath = 'dist'
 // 源文件目录
-const pugFiles = 'src/**/*.pug'
+const pugFiles = ['src/**/*.pug', "!src/templates/**"]
 const stylusFiles = 'src/**/*.styl'
 const jsFiles = ["src/**/*.js", "!src/node_modules/**"]
 const jsonFiles = ["src/**/*.json",  "!src/node_modules/**"]
@@ -94,6 +94,8 @@ gulp.task('watch', gulp.series(
     gulp.watch(moduleFiles, gulp.parallel('[copy modules]'))
   }
 ))
+
+
 
 gulp.task('default', gulp.parallel(
   'pug',

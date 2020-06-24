@@ -1,7 +1,7 @@
 view.page
-  view.page__hd
-    view.page__title form-input
-    view.page__desc 表单输入框
+  - var title = "form-input"
+  - var desc = "表单输入框"
+  include ../../templates/pageHead.pug
 
   view.page__bd.page__bd_spacing  
     form-input(

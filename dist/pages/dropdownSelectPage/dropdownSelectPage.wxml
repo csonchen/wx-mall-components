@@ -1,0 +1,8 @@
+
+<view class="page">
+  <view class="page__hd"> 
+    <view class="page__title">dropdown-select</view>
+    <view class="page__desc">下拉选择器面板</view>
+  </view>
+  <view class="page__bd page__bd_spacing">cc</view>
+</view>

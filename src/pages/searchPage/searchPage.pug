@@ -1,7 +1,7 @@
 view.page
-  view.page__hd 
-    view.page__title search
-    view.page__desc 搜索输入框
+  - var title = "search"
+  - var desc = "搜索输入框"
+  include ../../templates/pageHead.pug
 
   view.page__bd.page__bd_spacing
     search(

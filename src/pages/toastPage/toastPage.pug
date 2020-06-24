@@ -1,7 +1,7 @@
 view.page
-  view.page__hd
-    view.page__title toast
-    view.page__desc 操作提示语弹出框
+  - var title = "toast"
+  - var desc = "操作提示语弹出框"
+  include ../../templates/pageHead.pug
 
   view.page__bd.page__bd_spacing
     toast(
@@ -26,4 +26,4 @@ view.page
       wxParse(
         nodes="{{doc}}"
         language="html"
-      )   
+      )  

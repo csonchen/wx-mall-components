@@ -1,6 +1,6 @@
 
 <view class="page">
-  <view class="page__hd">
+  <view class="page__hd"> 
     <view class="page__title">wxParse</view>
     <view class="page__desc">富文本解析</view>
   </view>
