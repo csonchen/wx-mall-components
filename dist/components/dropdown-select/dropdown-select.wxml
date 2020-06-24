@@ -1,2 +1,16 @@
 
-<view>test...</view>
+<view class="dropdown-select">
+  <view class="flex-center-between dropdown-header">
+    <view class="flex-full flex-center-xy" wx:for="{{tabs}}" wx:key="index" wx:for-item="item" data-index="{{index}}" bind:tap="togglePanel">
+      <text class="tab-item">{{item.value}}</text>
+      <text class="{{ item.select ? 'triangle-top' : 'triangle-bottom' }}"></text>
+    </view>
+  </view>
+  <view class="options-panel {{showPanel ? 'options-panel__show' : ''}}">
+    <view class="flex-center-between option-item {{item.select ? 'option-item__select' : ''}}" wx:for="{{options}}" wx:key="index" wx:for-item="item" data-index="{{index}}" bind:tap="toggleOption">
+      <text>{{item.value}}</text>
+      <image class="check-icon" wx:if="{{item.select}}" src="/images/icon_checklist.png"></image>
+    </view>
+  </view>
+  <view class="mask mask {{showPanel ? 'mask-show' : ''}}">   </view>
+</view>

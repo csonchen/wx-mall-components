@@ -1,1 +1,36 @@
-view test...
+view.dropdown-select
+  view.flex-center-between.dropdown-header
+    view.flex-full.flex-center-xy(
+      wx:for="{{tabs}}"
+      wx:key="index"
+      wx:for-item="item"
+      data-index="{{index}}"
+      bind:tap="togglePanel"
+    )
+      text.tab-item {{item.value}}
+      text(
+        class="{{ item.select ? 'triangle-top' : 'triangle-bottom' }}"
+      )
+
+  view(
+    class="options-panel {{showPanel ? 'options-panel__show' : ''}}"
+  )
+    view(
+      class="flex-center-between option-item {{item.select ? 'option-item__select' : ''}}"
+      wx:for="{{options}}"
+      wx:key="index"
+      wx:for-item="item"
+      data-index="{{index}}"
+      bind:tap="toggleOption"
+    )
+      text {{item.value}}
+      image(
+        wx:if="{{item.select}}"
+        class="check-icon"
+        src="/images/icon_checklist.png"
+      )
+
+  view.mask(
+    class="mask {{showPanel ? 'mask-show' : ''}}"
+  )    
+  

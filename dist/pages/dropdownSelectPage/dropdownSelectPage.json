@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "dropdown-select": "/components/dropdown-select/dropdown-select",
+    "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse"
+  }
 }

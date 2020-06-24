@@ -1,0 +1,138 @@
+.flex,
+.flex-row,
+.flex-column,
+.flex-center-xy,
+.flex-center-between,
+.flex-top-between {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-left {
+  justify-content: flex-start;
+}
+.flex-center,
+.flex-center-xy {
+  justify-content: center;
+}
+.flex-right {
+  justify-content: flex-end;
+}
+.flex-space-between,
+.flex-center-between,
+.flex-top-between {
+  justify-content: space-between;
+}
+.flex-space-around {
+  justify-content: space-around;
+}
+.flex-top,
+.flex-top-between {
+  align-items: flex-start;
+}
+.flex-middle,
+.flex-center-xy,
+.flex-center-between {
+  align-items: center;
+}
+.flex-bottom {
+  align-items: flex-end;
+}
+.flex-stretch {
+  align-items: stretch;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-full {
+  flex: 1;
+}
+.triangle-top {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 5px solid #999;
+}
+.triangle-bottom {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #999;
+}
+.dropdown-select {
+  height: 44px;
+  position: relative;
+}
+.dropdown-select__show {
+  max-height: 500px;
+  transition: max-height 0.3s ease-in;
+}
+.dropdown-header {
+  background: #fff;
+  padding: 12px 15px;
+  position: relative;
+  z-index: 2;
+}
+.tab-item {
+  margin-right: 5px;
+}
+.options-panel {
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.options-panel__show {
+  max-height: 400px;
+  border-top: 1rpx solid #f2f2f2;
+  transition: max-height 0.25s ease-in;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  height: 100vh;
+  visibility: hidden;
+}
+.mask-show {
+  opacity: 1;
+  visibility: visible;
+}
+.option-item {
+  padding: 12px 15px;
+  background: #fff;
+  color: #999;
+}
+.option-item__select {
+  color: #323232;
+}
+.check-icon {
+  width: 20px;
+  height: 20px;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

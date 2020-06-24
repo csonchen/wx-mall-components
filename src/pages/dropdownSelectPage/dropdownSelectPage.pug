@@ -3,5 +3,14 @@ view.page
   - var desc = "下拉选择器面板"
   include ../../templates/pageHead.pug
 
-  view.page__bd.page__bd_spacing cc
+  view
+    dropdown-select(
+      tabs="{{tabs}}"
+      options="{{tabOptions}}"
+    )
 
+  view.page__bd.page__bd_spacing.mt15
+    wxParse(
+      nodes="{{doc}}"
+      language="html"
+    )
