@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse"
+  }
+}

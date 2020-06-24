@@ -28,12 +28,11 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.4",
-	"appid": "wx23227b31334fcf61",
+	"appid": "wx5a35be4e15614ade",
 	"projectname": "wx-mall-components",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -58,7 +57,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
@@ -71,6 +70,13 @@
 					"id": 1,
 					"name": "pages/inputPage/inputPage",
 					"pathName": "pages/inputPage/inputPage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/richTextPage/richTextPage",
+					"pathName": "pages/richTextPage/richTextPage",
 					"query": "",
 					"scene": null
 				}				

@@ -1,0 +1,16 @@
+view.page
+  view.page__hd
+    view.page__title wxParse
+    view.page__desc 富文本解析
+
+  view.page__bd.page__bd_spacing
+    wxParse(
+      nodes="{{htmlCode}}"
+      language="html"
+    )  
+
+    view.mt15
+      wxParse(
+        nodes="{{doc}}"
+        language="html"
+      )

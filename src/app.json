@@ -1,9 +1,13 @@
 {
   "pages": [
     "pages/index/index",
+
     "pages/searchPage/searchPage",
     "pages/toastPage/toastPage",
+
     "pages/cardSwiperPage/cardSwiperPage",
+    "pages/richTextPage/richTextPage",
+
     "pages/inputPage/inputPage"
   ],
   "window": {
