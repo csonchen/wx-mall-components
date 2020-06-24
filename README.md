@@ -19,7 +19,7 @@ npm run start
 
     wx-mall-components 微信小程序商城组件库
 
-    ./dist  # 编译后的小程序文件目录存放路径
+    ./dist  # 编译后的小程序文件目录存放路径
 
     ./src
     ├── app.js
