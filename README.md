@@ -62,3 +62,7 @@ npm run start
     │   └── plugin.styl
     └── templates  # 公用模板文件
         └── pageHead.pug
+
+## 小程序码体验
+
+![ ](./src/images/wechat.jpg) 
