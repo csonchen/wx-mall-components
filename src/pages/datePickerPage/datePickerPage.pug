@@ -4,6 +4,12 @@ view.page
   include ../../templates/pageHead.pug
 
   view.page__bd.page__bd_spacing
+    view.flex.flex-center-xy
+      view.btn.normal-btn.mr15(
+        bindtap="showPickerAction"
+      ) 弹出日期选择器
+
     date-picker(
-      class="ddd"
+      show="{{showPicker}}"
     )
+

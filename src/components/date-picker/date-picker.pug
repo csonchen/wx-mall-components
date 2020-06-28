@@ -1,21 +1,54 @@
 view.date-picker
-  view.mask
+  view.mask(
+    class="{{ show ? 'fade-in' : ''}}"
+  )
 
-  view.picker-container
+  view.picker-container(
+    class="{{ show ? 'slide-up' : '' }}"
+  )
     view.picker-head.flex-center-between
-      text.cancel 取消
+      text.cancel(
+        bindtap="hide"
+      ) 取消
       text.title 选择时间
-      text.confirm 确认
+      text.confirm(
+        bindtap="confirm"
+      ) 确认
 
     view.picker-timer.flex-center-between
-      view.flex-full.begin.timer-input 2018.01.01
+      view.flex-full.begin.timer-input(
+        class="{{ active == 'begin' ? 'active' : '' }}"
+        data-active="begin"
+        bindtap="handleActive"
+      ) {{begin ? begin : '---- : -- : --'}}
       text.timer-tips 至
-      view.flex-full.end.timer-input  2018.01.01
+      view.flex-full.end.timer-input(
+        class="{{ active == 'end' ? 'active' : '' }}"
+        data-active="end"
+        bindtap="handleActive"
+      )  {{end ? end : '---- : -- : --'}}
     
-    picker(
-      mode="date"
-      value="{{date}}"
-      start="2015-09-01"
-      end="2017-09-01"
+    picker-view(
+      class="picker-view"
+      indicator-style="height: 44px;"
+      value="{{value}}"
+      bindchange="bindChange"
     )
-      view.picker {{date}}
+      picker-view-column
+        view(
+          class="picker-view-column"
+          wx:for="{{years}}"
+          wx:key="index"
+        ) {{item}}年
+      picker-view-column
+        view(
+          class="picker-view-column"
+          wx:for="{{months}}"
+          wx:key="index"
+        ) {{item}}月
+      picker-view-column
+        view(
+          class="picker-view-column"
+          wx:for="{{days}}"
+          wx:key="index"
+        ) {{item}}日

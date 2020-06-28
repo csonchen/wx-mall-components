@@ -1,0 +1,13 @@
+.btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.normal-btn {
+  background: #0075ff;
+  color: #fff;
+}
+.del-btn {
+  background: #fe473c;
+  color: #fff;
+}

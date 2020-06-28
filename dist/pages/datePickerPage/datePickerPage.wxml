@@ -5,6 +5,9 @@
     <view class="page__desc">时间日期选择器</view>
   </view>
   <view class="page__bd page__bd_spacing">
-    <date-picker class="ddd"></date-picker>
+    <view class="flex flex-center-xy">
+      <view class="btn normal-btn mr15" bindtap="showPickerAction">弹出日期选择器</view>
+    </view>
+    <date-picker show="{{showPicker}}"></date-picker>
   </view>
 </view>
