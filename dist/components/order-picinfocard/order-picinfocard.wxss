@@ -1,4 +1,59 @@
-/* 字体，边距 */
+.flex,
+.flex-row,
+.flex-column,
+.flex-center-xy,
+.flex-center-between,
+.flex-top-between {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-left {
+  justify-content: flex-start;
+}
+.flex-center,
+.flex-center-xy {
+  justify-content: center;
+}
+.flex-right {
+  justify-content: flex-end;
+}
+.flex-space-between,
+.flex-center-between,
+.flex-top-between {
+  justify-content: space-between;
+}
+.flex-space-around {
+  justify-content: space-around;
+}
+.flex-top,
+.flex-top-between {
+  align-items: flex-start;
+}
+.flex-middle,
+.flex-center-xy,
+.flex-center-between {
+  align-items: center;
+}
+.flex-bottom {
+  align-items: flex-end;
+}
+.flex-stretch {
+  align-items: stretch;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-full {
+  flex: 1;
+}
 .font10 {
   font-size: 10px;
 }
@@ -260,7 +315,6 @@
 .mr20 {
   margin-right: 20px;
 }
-/* 文本 */
 .text-flow1 {
   overflow: hidden;
   display: -webkit-box;
@@ -292,7 +346,6 @@
 .color-blue {
   color: #0188ff;
 }
-/* 线条 */
 .bottom-line {
   position: relative;
 }
@@ -318,4 +371,18 @@
   width: 100%;
   background: #f2f2f2;
   transform: scaleY(0.5);
+}
+.picinfocard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.card-header {
+  padding: 10px 0;
+}
+.info-content {
+  padding: 15px 0px !important;
+}
+.card-foot {
+  padding: 10px 0;
 }

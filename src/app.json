@@ -10,7 +10,9 @@
     "pages/richTextPage/richTextPage",
     "pages/datePickerPage/datePickerPage",
 
-    "pages/inputPage/inputPage"
+    "pages/inputPage/inputPage",
+
+    "pages/orderPicinfoviewPage/orderPicinfoviewPage"
   ],
   "window": {
     "backgroundTextStyle": "light",

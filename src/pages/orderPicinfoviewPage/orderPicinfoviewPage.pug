@@ -1,0 +1,25 @@
+view.page
+  - var title = "order-picinfoview"
+  - var desc = "订单列表页商品图文价格组件"
+  include ../../templates/pageHead.pug
+
+  view.page__bd.page__bd_spacing 
+    view.bold.mb10 order-picinfoview
+    order-picinfoview(
+      image=""
+      name="我是标题"
+      price="100"
+      marketPrice="488.9"
+      num=10
+      skuText="颜色：黑色  尺寸：M"
+    )
+    wxParse(nodes="{{viewDoc}}")
+
+    view.bold.mb10.mt20 order-picinfocard
+    order-picinfocard(
+      products="{{products}}"
+      orderNo="749012790312749"
+      orderTime="2019-06-30 19:35:36"
+      orderStatusTitle="待发货"
+    )
+    wxParse(nodes="{{cardDoc}}")

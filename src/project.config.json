@@ -93,6 +93,13 @@
 					"pathName": "pages/datePickerPage/datePickerPage",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/orderPicinfoviewPage/orderPicinfoviewPage",
+					"pathName": "pages/orderPicinfoviewPage/orderPicinfoviewPage",
+					"query": "",
+					"scene": null
 				}					
 			]
 		}

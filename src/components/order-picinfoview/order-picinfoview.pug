@@ -1,0 +1,19 @@
+view.info-view(
+  class="classname"
+) 
+  view.info-view-body.flex
+    view.image-body
+      image(
+        src="{{image || prop.image}}"
+        class="pro-image"
+      )
+    view.flex-full.flex.flex-space-between.flex-column
+      view.content-top.flex-top-between
+        view.cor-black.font14.flex-full.text-flow2 {{name || prop.name}}
+        view.price.ml20
+          view.cor-black.font14 ¥{{price || prop.price}}
+          view.cor-gray.font12.line-through ¥{{marketPrice || prop.marketPrice}}
+
+      view.content-bottom.flex-center-between
+        view.cor-gray.font12 {{skuText || prop.skuText}}
+        text.cor-gray.font14 x{{num || prop.num}}

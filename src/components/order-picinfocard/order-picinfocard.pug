@@ -1,0 +1,27 @@
+view.picinfocard 
+  view.card-header.flex-center-between.bottom-line
+    view.header-left
+      view.bold.font14.color-black.mb2 订单编号：{{orderNo}}
+      view.color-gray.font10 下单时间：{{orderTime}}
+
+    view.header-right.font14.color-blue {{orderStatusTitle}}
+
+  order-picinfoview(
+    classname="info-content"
+    wx:for="{{products}}"
+    wx:for-item="item"
+    wx:key="index"
+    prop="{{item}}"
+  )
+
+  view.card-foot.flex.flex-right.top-line
+    lz-button(
+      class="ml10"
+      label="取消订单"
+    )
+
+    lz-button(
+      class="ml10"
+      type="blue"
+      label="确认发货"
+    )

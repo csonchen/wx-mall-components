@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "order-picinfoview": "../order-picinfoview/order-picinfoview",
+    "lz-button": "../lz-button/lz-button"
+  }
+}

@@ -1,0 +1,108 @@
+.lz-btn {
+/* height 30px */
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 0px 12px;
+  margin: 3px 0px;
+  font-size: 14px;
+  line-height: 30px;
+  border-color: #ccc;
+  width: inherit;
+  border-radius: 15px;
+  background: #fff;
+  color: #323232;
+  box-sizing: border-box;
+}
+.lz-btn-red {
+  color: #fff;
+  background: #fe473c;
+  border-color: #fe473c;
+}
+.lz-btn-blue {
+  color: #fff;
+  background: #0188ff;
+  border-color: #0188ff;
+}
+.lz-btn-orange {
+  color: #fff;
+  background: #fea54c;
+  border-color: #fea54c;
+}
+.lz-btn-gray {
+  color: #323232;
+  background: #f6f6f6;
+  border-color: #f6f6f6;
+}
+.lz-btn-redGray {
+  color: #fe473c;
+  background: #ffdad7;
+  border-color: #fe473c;
+}
+.lz-btn-sm {
+/* height 24px */
+  line-height: 24px;
+  border-radius: 12px;
+  padding: 0 10px;
+  font-size: 12px;
+  align-items: center;
+/* min-width 75px */
+}
+.lz-btn-little {
+/* height 20px */
+  line-height: 20px;
+  border-radius: 10px;
+  padding: 0 7px;
+  font-size: 12px;
+  align-items: center;
+}
+.lz-btn-large {
+/* height 40px */
+  line-height: 40px;
+  border-radius: 20px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+.lz-btn-big {
+/* height 48px */
+  line-height: 48px;
+  border-radius: 24px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+.lz-btn.lz-btn-ghost {
+  background: transparent !important;
+  color: #323232;
+}
+.lz-btn-red.lz-btn-ghost {
+  background: transparent !important;
+  color: #fe473c;
+}
+.lz-btn-blue.lz-btn-ghost {
+  background: transparent !important;
+  color: #0188ff;
+}
+.lz-btn-orange.lz-btn-ghost {
+  background: transparent !important;
+  color: #fea54c;
+}
+.lz-btn-gray.lz-btn-ghost {
+  background: transparent !important;
+  color: #323232;
+}
+.lz-btn-redGray.lz-btn-ghost {
+  background: transparent !important;
+  color: #fe473c;
+}
+.lz-btn-disabled {
+  color: #fff;
+  background: #ccc;
+  border-color: #ccc;
+}
+.lz-btn-min-width {
+  min-width: 55px;
+}
+.lz-btn-no-border {
+  border: 0px solid transparent;
+}

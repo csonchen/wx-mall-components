@@ -10,11 +10,11 @@
 		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
-		"coverView": true,
-		"nodeModules": true,
 		"autoAudits": false,
+		"coverView": true,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
+		"nodeModules": true,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -93,7 +93,14 @@
 					"pathName": "pages/datePickerPage/datePickerPage",
 					"query": "",
 					"scene": null
-				}
+				},
+				{
+					"id": 5,
+					"name": "pages/orderPicinfoviewPage/orderPicinfoviewPage",
+					"pathName": "pages/orderPicinfoviewPage/orderPicinfoviewPage",
+					"query": "",
+					"scene": null
+				}					
 			]
 		}
 	}

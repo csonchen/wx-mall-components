@@ -1,0 +1,21 @@
+
+<view class="info-view classname"> 
+  <view class="info-view-body flex">
+    <view class="image-body">
+      <image class="pro-image" src="{{image || prop.image}}"></image>
+    </view>
+    <view class="flex-full flex flex-space-between flex-column">
+      <view class="content-top flex-top-between">
+        <view class="cor-black font14 flex-full text-flow2">{{name || prop.name}}</view>
+        <view class="price ml20">
+          <view class="cor-black font14">¥{{price || prop.price}}</view>
+          <view class="cor-gray font12 line-through">¥{{marketPrice || prop.marketPrice}}</view>
+        </view>
+      </view>
+      <view class="content-bottom flex-center-between">
+        <view class="cor-gray font12">{{skuText || prop.skuText}}</view>
+        <text class="cor-gray font14">x{{num || prop.num}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">order-picinfoview</view>
+    <view class="page__desc">订单列表页商品图文价格组件</view>
+  </view>
+  <view class="page__bd page__bd_spacing"> 
+    <view class="bold mb10">order-picinfoview</view>
+    <order-picinfoview image="" name="我是标题" price="100" marketPrice="488.9" num="10" skuText="颜色：黑色  尺寸：M"></order-picinfoview>
+    <wxParse nodes="{{viewDoc}}"></wxParse>
+    <view class="bold mb10 mt20">order-picinfocard</view>
+    <order-picinfocard products="{{products}}" orderNo="749012790312749" orderTime="2019-06-30 19:35:36" orderStatusTitle="待发货"></order-picinfocard>
+    <wxParse nodes="{{cardDoc}}"></wxParse>
+  </view>
+</view>

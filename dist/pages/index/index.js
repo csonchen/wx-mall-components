@@ -12,6 +12,9 @@ Page({
     ],
     formData: [
       { value: '输入框', link: '/pages/inputPage/inputPage' }
+    ],
+    businessData: [
+      { value: '订单图文列表', link: "/pages/orderPicinfoviewPage/orderPicinfoviewPage" }
     ]
   }
 })

@@ -1,0 +1,15 @@
+
+<view class="picinfocard"> 
+  <view class="card-header flex-center-between bottom-line">
+    <view class="header-left">
+      <view class="bold font14 color-black mb2">订单编号：{{orderNo}}</view>
+      <view class="color-gray font10">下单时间：{{orderTime}}</view>
+    </view>
+    <view class="header-right font14 color-blue">{{orderStatusTitle}}</view>
+  </view>
+  <order-picinfoview classname="info-content" wx:for="{{products}}" wx:for-item="item" wx:key="index" prop="{{item}}"></order-picinfoview>
+  <view class="card-foot flex flex-right top-line">
+    <lz-button class="ml10" label="取消订单"></lz-button>
+    <lz-button class="ml10" type="blue" label="确认发货"></lz-button>
+  </view>
+</view>

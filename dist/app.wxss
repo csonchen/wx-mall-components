@@ -315,6 +315,63 @@
 .mr20 {
   margin-right: 20px;
 }
+.text-flow1 {
+  overflow: hidden;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+}
+.text-flow2 {
+  overflow: hidden;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.bold {
+  font-weight: bold;
+}
+.color-black {
+  color: #323232;
+}
+.color-gray {
+  color: #999;
+}
+.color-blue {
+  color: #0188ff;
+}
+.bottom-line {
+  position: relative;
+}
+.bottom-line::after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #f2f2f2;
+  transform: scaleY(0.5);
+}
+.top-line {
+  position: relative;
+}
+.top-line::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #f2f2f2;
+  transform: scaleY(0.5);
+}
 .page {
   position: absolute;
   top: 0;
