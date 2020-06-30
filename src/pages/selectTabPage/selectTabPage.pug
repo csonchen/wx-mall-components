@@ -1,0 +1,13 @@
+view.page
+  - var title = "select-tab"
+  - var desc = "下拉选择 + 选项卡组合选择器"
+  include ../../templates/pageHead.pug
+
+  view
+    select-tab(
+      tabs="{{tabs}}"
+      options="{{tabOptions}}"
+    )
+
+    view.page__bd.page__bd_spacing
+      wxParse(nodes="{{doc}}")

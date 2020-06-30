@@ -100,7 +100,14 @@
 					"pathName": "pages/orderPicinfoviewPage/orderPicinfoviewPage",
 					"query": "",
 					"scene": null
-				}					
+				},
+				{
+					"id": 6,
+					"name": "pages/selectTabPage/selectTabPage",
+					"pathName": "pages/selectTabPage/selectTabPage",
+					"query": "",
+					"scene": null
+				}						
 			]
 		}
 	}

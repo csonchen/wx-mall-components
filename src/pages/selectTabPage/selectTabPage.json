@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse",
+    "select-tab": "/components/select-tab/select-tab"
+  }
+}

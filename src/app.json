@@ -5,6 +5,7 @@
     "pages/searchPage/searchPage",
     "pages/toastPage/toastPage",
     "pages/dropdownSelectPage/dropdownSelectPage",
+    "pages/selectTabPage/selectTabPage",
 
     "pages/cardSwiperPage/cardSwiperPage",
     "pages/richTextPage/richTextPage",
