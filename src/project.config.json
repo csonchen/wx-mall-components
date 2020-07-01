@@ -114,7 +114,14 @@
 					"pathName": "pages/gridPage/gridPage",
 					"query": "",
 					"scene": null
-				}								
+				},
+				{
+					"id": 8,
+					"name": "pages/lzButtonPage/lzButtonPage",
+					"pathName": "pages/lzButtonPage/lzButtonPage",
+					"query": "",
+					"scene": null
+				}									
 			]
 		}
 	}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse",
+    "lz-button": "/components/lz-button/lz-button"
+  }
+}

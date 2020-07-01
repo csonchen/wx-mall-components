@@ -1,0 +1,30 @@
+view.page
+  - var title = "lz-button"
+  - var desc = "按钮"
+  include ../../templates/pageHead.pug
+
+  view.page__bd.page__bd_spacing
+    view.mb20.flex.flex-left
+      lz-button(class="mr10" label="按钮1")
+      lz-button(class="mr10" label="按钮2" type="red")
+      lz-button(class="mr10" label="按钮3" type="blue")
+      lz-button(class="mr10" label="按钮4" type="orange")
+      lz-button(class="mr10" label="按钮5" type="main")
+
+    view.mb20.flex.flex-bottom 
+      lz-button(class="mr10" label="按钮6", size="little")
+      lz-button(class="mr10" label="按钮7", size="small")
+      lz-button(class="mr10" label="按钮8", size="default")
+      lz-button(class="mr10" label="按钮9", size="large")
+      lz-button(class="mr10" label="按钮10", size="big")
+
+    view.mb20.flex.flex-bottom 
+      lz-button(class="mr10" label="按钮11" disabled)
+      lz-button(class="mr10" label="按钮12" ghost)
+      lz-button(class="mr10" label="按钮13" fixedWidth="{{true}}")
+      lz-button(class="mr10" label="按钮14" fixedBorder="{{false}}")
+
+    view
+      wxParse(nodes="{{doc}}")
+      wxParse(nodes="{{typeDoc}}")
+      wxParse(nodes="{{sizeDoc}}")

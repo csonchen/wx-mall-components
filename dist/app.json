@@ -7,6 +7,7 @@
     "pages/dropdownSelectPage/dropdownSelectPage",
     "pages/selectTabPage/selectTabPage",
     "pages/gridPage/gridPage",
+    "pages/lzButtonPage/lzButtonPage",
 
     "pages/cardSwiperPage/cardSwiperPage",
     "pages/richTextPage/richTextPage",
