@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "grid": "/components/grid/grid",
+    "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse"
+  }
+}

@@ -1,0 +1,7 @@
+
+<view class="grid"> 
+  <view class="grid-item" wx:for="{{list}}" wx:for-item="item" wx:key="index">
+    <view class="font16 color-blue">{{item.title}}</view>
+    <view class="font12 color-gray">{{item.tips}}    </view>
+  </view>
+</view>

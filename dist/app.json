@@ -6,6 +6,7 @@
     "pages/toastPage/toastPage",
     "pages/dropdownSelectPage/dropdownSelectPage",
     "pages/selectTabPage/selectTabPage",
+    "pages/gridPage/gridPage",
 
     "pages/cardSwiperPage/cardSwiperPage",
     "pages/richTextPage/richTextPage",

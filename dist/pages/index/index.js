@@ -5,6 +5,7 @@ Page({
       { value: '提示语弹出框', link: '/pages/toastPage/toastPage' },
       { value: '下拉选择器', link: '/pages/dropdownSelectPage/dropdownSelectPage' },
       { value: '下拉选择+选项卡组合器', link: '/pages/selectTabPage/selectTabPage' },
+      { value: 'grid格子布局', link: '/pages/gridPage/gridPage' },
     ],
     mutualData: [
       { value: '卡片滑动交互', link: '/pages/cardSwiperPage/cardSwiperPage' },

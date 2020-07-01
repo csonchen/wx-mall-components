@@ -107,7 +107,14 @@
 					"pathName": "pages/selectTabPage/selectTabPage",
 					"query": "",
 					"scene": null
-				}						
+				},
+				{
+					"id": 7,
+					"name": "pages/gridPage/gridPage",
+					"pathName": "pages/gridPage/gridPage",
+					"query": "",
+					"scene": null
+				}								
 			]
 		}
 	}

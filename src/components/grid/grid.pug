@@ -1,0 +1,8 @@
+view.grid 
+  view.grid-item(
+    wx:for="{{list}}"
+    wx:for-item="item"
+    wx:key="index"
+  )
+    view.font16.color-blue {{item.title}}
+    view.font12.color-gray {{item.tips}}    
