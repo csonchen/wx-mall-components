@@ -56,23 +56,40 @@
 /* widget */
 $liViewPadding = 20px
 
-.li__view
+.page-icon
+  width 21px
+  height 21px
+
+.page__li
   margin 8px 0
+  position relative
+
+.li__view
   background-color #ffffff
   overflow hidden
   border-radius 2px
   cursor pointer  
   .li-container
     padding $liViewPadding
+  &:active
+    color cr-gray
+    background #eee
 
 .subli-container 
-  border-top 1px solid #f2f2f2
+  // border-top 1rpx solid #eee
+  overflow hidden
+  position relative
+  max-height 0
+  transition max-height 0.2s ease-out
+  &.show
+    max-height 400px
+    transition max-height 0.25s ease-in  
 
 .subli__view
   background-color #fff
   overflow hidden
   color cr-gray
-  margin-top -8px
+  // margin-top -7px
   .li-container
     padding $liViewPadding   
 

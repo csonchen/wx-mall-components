@@ -1,5 +1,11 @@
 Page({
   data: {
+    shop: {
+      base: true,
+      mutual: false,
+      form: false,
+      business: false,
+    },
     baseData: [
       { value: '搜索框', link: '/pages/searchPage/searchPage' },
       { value: '提示语弹出框', link: '/pages/toastPage/toastPage' },
@@ -19,5 +25,16 @@ Page({
     businessData: [
       { value: '订单图文列表', link: "/pages/orderPicinfoviewPage/orderPicinfoviewPage" }
     ]
+  },
+
+  togglePanel(e) {
+    const { type } = e.currentTarget.dataset
+
+    const target = this.data.shop[`${type}`]
+    this.data.shop[`${type}`] = !target
+
+    this.setData({
+      shop: this.data.shop
+    })
   }
 })

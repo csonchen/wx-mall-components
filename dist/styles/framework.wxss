@@ -54,8 +54,15 @@
   font-size: 14px;
 }
 /* widget */
-.li__view {
+.page-icon {
+  width: 21px;
+  height: 21px;
+}
+.page__li {
   margin: 8px 0;
+  position: relative;
+}
+.li__view {
   background-color: #fff;
   overflow: hidden;
   border-radius: 2px;
@@ -64,14 +71,24 @@
 .li__view .li-container {
   padding: 20px;
 }
+.li__view:active {
+  color: cr-gray;
+  background: #eee;
+}
 .subli-container {
-  border-top: 1px solid #f2f2f2;
+  overflow: hidden;
+  position: relative;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.subli-container.show {
+  max-height: 400px;
+  transition: max-height 0.25s ease-in;
 }
 .subli__view {
   background-color: #fff;
   overflow: hidden;
   color: cr-gray;
-  margin-top: -8px;
 }
 .subli__view .li-container {
   padding: 20px;
