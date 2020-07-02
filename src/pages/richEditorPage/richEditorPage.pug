@@ -1,0 +1,10 @@
+view
+  rich-editor(placeholder="开始编辑...")
+
+  view.page(style="top: 100vh;overflow:inherit;")
+    - var title = "rich-editor"
+    - var desc = "富文本编辑器"
+    include ../../templates/pageHead.pug
+
+    view.page__bd.page__bd_spacing
+      wxParse(nodes="{{doc}}")  

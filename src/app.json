@@ -11,6 +11,7 @@
 
     "pages/cardSwiperPage/cardSwiperPage",
     "pages/richTextPage/richTextPage",
+    "pages/richEditorPage/richEditorPage",
     "pages/datePickerPage/datePickerPage",
 
     "pages/inputPage/inputPage",

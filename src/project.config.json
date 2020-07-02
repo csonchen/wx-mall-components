@@ -121,6 +121,13 @@
 					"pathName": "pages/lzButtonPage/lzButtonPage",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "pages/richEditorPage/richEditorPage",
+					"pathName": "pages/richEditorPage/richEditorPage",
+					"query": "",
+					"scene": null
 				}									
 			]
 		}

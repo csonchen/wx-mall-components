@@ -1,0 +1,13 @@
+
+<view>
+  <rich-editor placeholder="开始编辑..."></rich-editor>
+  <view class="page" style="top: 100vh;overflow:inherit;">
+    <view class="page__hd">
+      <view class="page__title">rich-editor</view>
+      <view class="page__desc">富文本编辑器</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+      <wxParse nodes="{{doc}}"> </wxParse>
+    </view>
+  </view>
+</view>

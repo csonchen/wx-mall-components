@@ -17,6 +17,7 @@ Page({
     mutualData: [
       { value: '卡片滑动交互', link: '/pages/cardSwiperPage/cardSwiperPage' },
       { value: '富文本解析展示', link: '/pages/richTextPage/richTextPage' },
+      { value: '富文本编辑器', link: '/pages/richEditorPage/richEditorPage' },
       { value: '日期选择器', link: '/pages/datePickerPage/datePickerPage' },
     ],
     formData: [

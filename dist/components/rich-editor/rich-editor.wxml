@@ -1,0 +1,25 @@
+
+<view class="rich-editor" style="height:{{editorHeight}}px;">
+  <editor class="ql-container" id="editor" placeholder="{{placeholder}}" bindstatuschange="onStatusChange" bindready="onEditorReady" cursor-spacing="{{50}}"></editor>
+</view>
+<view class="toolbar" style="bottom: {{isIOS ? keyboardHeight : 0}}px;" hidden="{{keyboardHeight > 0 ? false : true}}">
+  <view class="icon-group flex-center-between">
+    <view class="flex flex-middle" catchtouchend="format">
+      <image class="edit-icon" catchtouchend="insertImage" src="/images/icon_editor_photo.png"></image>
+      <image class="edit-icon" hidden="{{!formats.color}}" catchtouchend="toggleDrawPanel" src="/images/icon_editor_color_pre.png" style="background: {{formats.color ? formats.color : 'none'}}"></image>
+      <image class="edit-icon" hidden="{{formats.color}}" catchtouchend="toggleDrawPanel" src="/images/icon_editor_color_def.png" style="background: {{formats.color ? formats.color : 'none'}}"></image>
+      <image class="edit-icon" src="{{formats.bold ? '/images/icon_editor_bold_pre.png' : '/images/icon_editor_bold_def.png'}}" data-name="bold"></image>
+    </view>
+    <view class="flex flex-middle">
+      <image class="edit-icon" src="/images/icon_editor_keyboard.png"></image>
+    </view>
+    <view class="draw-panel draw-panel {{showDrawPanel ? 'draw-panel__show' : 'draw-panel__hide'}}">
+      <view class="flex panel-body" catchtouchend="format">
+        <view class="triangle-bottom panel-triangle"></view>
+        <view class="panel-item flex flex-center-xy" wx:for="{{colors}}" wx:key="index" wx:for-item="item" data-name="color" data-value="{{item}}" style="background: {{item}};">
+          <image class="editor-check {{formats.color == item ? 'editor-check__show' : 'editor-check__hide'}}" data-name="color" data-value="{{item}}" src="/images/icon_editor_check.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

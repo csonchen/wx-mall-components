@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse",
+    "rich-editor": "/components/rich-editor/rich-editor"
+  }
+}

@@ -1,0 +1,61 @@
+view.rich-editor(style="height:{{editorHeight}}px;")
+  editor(
+    id="editor"
+    class="ql-container"
+    placeholder="{{placeholder}}"
+    bindstatuschange="onStatusChange"
+    bindready="onEditorReady"
+    cursor-spacing="{{50}}"
+  )
+
+view.toolbar(
+  style="bottom: {{isIOS ? keyboardHeight : 0}}px;"
+  hidden!="{{keyboardHeight > 0 ? false : true}}"
+)
+  view.icon-group.flex-center-between
+    view.flex.flex-middle(catchtouchend="format")
+      image(
+        class="edit-icon" 
+        catchtouchend="insertImage" 
+        src="/images/icon_editor_photo.png"
+      )
+      image(
+        hidden="{{!formats.color}}"
+        class="edit-icon" 
+        catchtouchend="toggleDrawPanel" 
+        src="/images/icon_editor_color_pre.png"
+        style="background: {{formats.color ? formats.color : 'none'}}"
+      )
+      image(
+        hidden="{{formats.color}}"
+        class="edit-icon" 
+        catchtouchend="toggleDrawPanel" 
+        src="/images/icon_editor_color_def.png"
+        style="background: {{formats.color ? formats.color : 'none'}}"
+      )
+      image(
+        class="edit-icon" 
+        src="{{formats.bold ? '/images/icon_editor_bold_pre.png' : '/images/icon_editor_bold_def.png'}}"
+        data-name="bold"
+      )
+    view.flex.flex-middle
+      image(class="edit-icon" src="/images/icon_editor_keyboard.png")
+    view.draw-panel(
+      class="draw-panel {{showDrawPanel ? 'draw-panel__show' : 'draw-panel__hide'}}"
+    )
+      view.flex.panel-body(catchtouchend="format")
+        view.triangle-bottom.panel-triangle
+        view.panel-item.flex.flex-center-xy(
+          wx:for="{{colors}}"
+          wx:key="index"
+          wx:for-item="item"
+          data-name="color"
+          data-value="{{item}}"
+          style="background: {{item}};"
+        )
+          image(
+            class="editor-check {{formats.color == item ? 'editor-check__show' : 'editor-check__hide'}}" 
+            data-name="color"
+            data-value="{{item}}" 
+            src="/images/icon_editor_check.png"
+          )
