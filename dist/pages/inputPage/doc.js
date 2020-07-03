@@ -37,6 +37,18 @@ module.exports = {
     <td>结尾</td>
     <td>String</td>
     <td>default:<br /> ''</td>
+  </tr>
+  <tr>
+    <td>checkbox</td>
+    <td>是否为复选框</td>
+    <td>Boolean</td>
+    <td>default:<br /> false</td>
+  </tr>
+  <tr>
+    <td>checked</td>
+    <td>是否选中</td>
+    <td>Boolean</td>
+    <td>default:<br /> false</td>
   </tr>      
   </table>
   <br />

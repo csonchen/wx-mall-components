@@ -79,3 +79,21 @@
 .cell-foot {
   color: #999;
 }
+.checkbox {
+  border: 2px solid #ccc;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+}
+.checkbox.checkbox-checked {
+  border: none;
+  background: #0188ff;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+.checkbox .check-icon {
+  width: 20px;
+  height: 20px;
+}

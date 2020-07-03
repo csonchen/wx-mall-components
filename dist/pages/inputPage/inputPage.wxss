@@ -1,0 +1,4 @@
+.input-cell {
+  padding: 15px 10px !important;
+  border-radius: 10px;
+}

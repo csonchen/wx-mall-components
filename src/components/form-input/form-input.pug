@@ -1,17 +1,30 @@
 view.form-input.flex-center-between(
+  class="classname"
   bindtap="handleClick"
 )
   view.cell-left {{title}}
   view.flex-full.cell-right.flex.flex-middle.flex-right
+    // 输入框
     input(
       wx:if="{{input}}"
       class="input-val"
       placeholder='{{placeholder}}'
       placeholder-class='input-place'
     )
+    // 文本
     text.cell-foot {{foot}}
+    // 箭头
     image(
       wx:if="{{link}}"
       class="link-icon"
       src="/images/icon_extended_gray.png"
     )
+    // 复选框
+    view(
+      wx:if="{{checkbox}}"
+      class="checkbox {{checked ? 'checkbox-checked' : ''}}"
+    ) 
+      image.check-icon(
+        hidden="{{!checked}}"
+        src="/images/icon_checkbox_selected.png"
+      )
