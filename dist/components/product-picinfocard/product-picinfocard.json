@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "product-picinfoview": "/components/product-picinfoview/product-picinfoview",
+    "grid": "/components/grid/grid",
+    "lz-button": "/components/lz-button/lz-button"
+  }
+}

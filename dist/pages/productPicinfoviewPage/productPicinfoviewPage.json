@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse",
-    "product-picinfoview": "/components/product-picinfoview/product-picinfoview"
+    "product-picinfoview": "/components/product-picinfoview/product-picinfoview",
+    "product-picinfocard": "/components/product-picinfocard/product-picinfocard"
   }
 }

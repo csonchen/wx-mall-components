@@ -1,0 +1,19 @@
+view.product-picinfocard 
+  product-picinfoview(classname="infoview")
+  grid(list="{{grids}}")
+
+  view.price-area
+    view.text-right 
+      text.font12 销售价：
+      text.price-label ¥
+      text.font16 189
+      text.font12 .9
+      text.font16 ～ 
+      text ¥
+      text.font16 219
+      text.font12 .9
+
+  view.btn-group.text-right.top-line
+    lz-button(class="mr10" label="分享商品")
+    lz-button(class="mr10" label="库存管理")
+    lz-button(label="下架商品")

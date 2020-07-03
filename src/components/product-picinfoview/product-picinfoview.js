@@ -1,1 +1,7 @@
-Component({})
+Component({
+  externalClasses: ['classname'],
+
+  properties: {
+
+  }
+})

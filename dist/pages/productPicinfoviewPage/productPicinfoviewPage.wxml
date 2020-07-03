@@ -5,6 +5,9 @@
     <view class="page__desc">商品库商品信息视图</view>
   </view>
   <view class="page__bd page__bd_spacing">
+    <view class="mb15 bold">product-picinfoview</view>
     <product-picinfoview></product-picinfoview>
+    <view class="mb15 bold mt20">product-picinfocard</view>
+    <product-picinfocard></product-picinfocard>
   </view>
 </view>

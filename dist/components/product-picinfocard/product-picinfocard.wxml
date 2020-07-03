@@ -1,0 +1,22 @@
+
+<view class="product-picinfocard"> 
+  <product-picinfoview classname="infoview"></product-picinfoview>
+  <grid list="{{grids}}"></grid>
+  <view class="price-area">
+    <view class="text-right"> 
+      <text class="font12">销售价：</text>
+      <text class="price-label">¥</text>
+      <text class="font16">189</text>
+      <text class="font12">.9</text>
+      <text class="font16">～ </text>
+      <text>¥</text>
+      <text class="font16">219</text>
+      <text class="font12">.9</text>
+    </view>
+  </view>
+  <view class="btn-group text-right top-line">
+    <lz-button class="mr10" label="分享商品"></lz-button>
+    <lz-button class="mr10" label="库存管理"></lz-button>
+    <lz-button label="下架商品"></lz-button>
+  </view>
+</view>

@@ -1,5 +1,5 @@
 
-<view class="product-picinfoview flex">
+<view class="product-picinfoview flex classname">
   <view class="product-image">
     <image class="pro-image" src=""></image>
     <view class="bottom-mask color-white font10 red">已上架</view>
