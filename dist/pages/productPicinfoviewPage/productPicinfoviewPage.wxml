@@ -1,0 +1,10 @@
+
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">product-picinfoview</view>
+    <view class="page__desc">商品库商品信息视图</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <product-picinfoview></product-picinfoview>
+  </view>
+</view>

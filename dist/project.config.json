@@ -128,6 +128,13 @@
 					"pathName": "pages/richEditorPage/richEditorPage",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "pages/productPicinfoviewPage/productPicinfoviewPage",
+					"pathName": "pages/productPicinfoviewPage/productPicinfoviewPage",
+					"query": "",
+					"scene": null
 				}									
 			]
 		}

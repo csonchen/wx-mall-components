@@ -3,12 +3,12 @@ view.page
   - var desc = "搜索输入框"
   include ../../templates/pageHead.pug
 
-  view.page__bd.page__bd_spacing
+  view
     search(
       placeholder="输入搜索内容"
     )
 
-    view.mt15
+    view.mt15.page__bd.page__bd_spacing
       wxParse(
         nodes="{{doc}}"
         language="html"

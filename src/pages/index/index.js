@@ -24,7 +24,8 @@ Page({
       { value: '输入框', link: '/pages/inputPage/inputPage' }
     ],
     businessData: [
-      { value: '订单图文列表', link: "/pages/orderPicinfoviewPage/orderPicinfoviewPage" }
+      { value: '订单图文列表', link: "/pages/orderPicinfoviewPage/orderPicinfoviewPage" },
+      { value: '商品库商品信息视图', link: "/pages/productPicinfoviewPage/productPicinfoviewPage" },
     ]
   },
 

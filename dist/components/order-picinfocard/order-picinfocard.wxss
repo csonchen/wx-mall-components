@@ -340,6 +340,9 @@
 .color-black {
   color: #323232;
 }
+.color-white {
+  color: #fff;
+}
 .color-gray {
   color: #999;
 }

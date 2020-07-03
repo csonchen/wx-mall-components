@@ -4,9 +4,9 @@
     <view class="page__title">search</view>
     <view class="page__desc">搜索输入框</view>
   </view>
-  <view class="page__bd page__bd_spacing">
+  <view>
     <search placeholder="输入搜索内容"></search>
-    <view class="mt15">
+    <view class="mt15 page__bd page__bd_spacing">
       <wxParse nodes="{{doc}}" language="html"></wxParse>
     </view>
   </view>

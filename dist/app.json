@@ -16,7 +16,8 @@
 
     "pages/inputPage/inputPage",
 
-    "pages/orderPicinfoviewPage/orderPicinfoviewPage"
+    "pages/orderPicinfoviewPage/orderPicinfoviewPage",
+    "pages/productPicinfoviewPage/productPicinfoviewPage"
   ],
   "window": {
     "backgroundTextStyle": "light",
