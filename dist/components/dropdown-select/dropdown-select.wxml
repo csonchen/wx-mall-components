@@ -2,7 +2,7 @@
 <view class="dropdown-select">
   <view class="flex-center-between dropdown-header">
     <view class="flex-full flex-center-xy" wx:for="{{tabs}}" wx:key="index" wx:for-item="item" data-index="{{index}}" bind:tap="togglePanel">
-      <text class="tab-item">{{item.value}}</text>
+      <text class="tab-item font14">{{item.value}}</text>
       <text class="{{ item.select ? 'triangle-top' : 'triangle-bottom' }}"></text>
     </view>
   </view>
