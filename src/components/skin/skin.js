@@ -1,3 +1,5 @@
+const SkinModel = require('../../model/SkinModel');
+
 Component({
   properties: {
     skins: {
@@ -17,6 +19,9 @@ Component({
   methods: {
     handleSelect(e) {
       const { index } = e.currentTarget.dataset
+      const target = this.data.skins[index]
+      // 设置皮肤
+      SkinModel.setSkin(target)
       this.setData({ current: index })
     }
   }

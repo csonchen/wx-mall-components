@@ -13,6 +13,7 @@ const jsonFiles = ["src/**/*.json",  "!src/node_modules/**"]
 const imgFiles = ["src/**/*.?(png|jpg|gif)",  "!src/node_modules/**"]
 const moduleFiles = 'src/node_modules/**/*'
 const templateFiles = "src/templates/*.pug"
+const wxsFiles = "src/**/*.wxs"
 
 // 源文件处理函数
 function doPug(path, distPath) {
@@ -37,27 +38,11 @@ function doStylus(path, distPath) {
     .pipe(gulp.dest(distPath))
 }
 
-function doJS(path, distPath) {
-  return gulp.src(path)
+function doCopyFiles(path, distPath, options = {}) {
+  return gulp.src(path, options)
     .pipe(gulp.dest(distPath))
 }
 
-function doJSON(path, distPath) {
-  return gulp.src(path)
-    .pipe(gulp.dest(distPath))
-}
- 
-function doImg(path, distPath) {
-  return gulp.src(path)
-    .pipe(gulp.dest(distPath))
-}
-
-function doModules(path, distPath) {
-  return gulp.src(path, {
-    base: './src'
-  })
-  .pipe(gulp.dest(distPath))
-}
 
 // 创建任务
 gulp.task('pug', function() {
@@ -69,30 +54,35 @@ gulp.task('stylus', function() {
 })
 
 gulp.task('[copy js]', function() {
-  return doJS(jsFiles, distPath)
+  return doCopyFiles(jsFiles, distPath)
 })
 
 gulp.task('[copy json]', function() {
-  return doJSON(jsonFiles, distPath)
+  return doCopyFiles(jsonFiles, distPath)
 })
 
 gulp.task('[copy img]', function() {
-  return doImg(imgFiles, distPath)
+  return doCopyFiles(imgFiles, distPath)
+})
+
+gulp.task('[copy wxs]', function() {
+  return doCopyFiles(wxsFiles, distPath)
 })
 
 gulp.task('[copy modules]', function() {
-  return doModules(moduleFiles, distPath)
+  return doCopyFiles(moduleFiles, distPath, { base: './src' })
 })
 
 gulp.task('watch', gulp.series(
-  gulp.parallel('pug', 'stylus', '[copy js]', '[copy json]', '[copy img]', '[copy modules]'),
+  gulp.parallel('pug', 'stylus', '[copy js]', '[copy json]', '[copy img]', '[copy modules]', '[copy wxs]'),
   () => {
     gulp.watch(pugFiles.concat(templateFiles), gulp.parallel('pug')),
     gulp.watch(stylusFiles, gulp.parallel('stylus')),
     gulp.watch(jsFiles, gulp.parallel('[copy js]')),
     gulp.watch(jsonFiles, gulp.parallel('[copy json]')),
     gulp.watch(imgFiles, gulp.parallel('[copy img]')),
-    gulp.watch(moduleFiles, gulp.parallel('[copy modules]'))
+    gulp.watch(moduleFiles, gulp.parallel('[copy modules]')),
+    gulp.watch(wxsFiles, gulp.parallel('[copy wxs]'))
   }
 ))
 
@@ -103,4 +93,5 @@ gulp.task('default', gulp.parallel(
   '[copy json]',
   '[copy img]',
   '[copy modules]',
+  '[copy wxs]',
 ))
