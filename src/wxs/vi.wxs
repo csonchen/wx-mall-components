@@ -1,16 +1,24 @@
 var STYLE_PROCESSOR = {
-  color: function(value) {
+  'color': function(value) {
     return "color: " + value + " !important;";
+  },
+
+  'background': function(value) {
+    return "background: " + value + " !important;";
+  },
+
+  'border-color': function(value) {
+    return "border-color: " + value + " !important;";
   }
 }
 
 module.exports = {
-  s: function(vi, key, second) {
+  s: function(vi, key, second, isValid = true) {
     vi = vi || {};
     second = second || false;
-    var theme = vi.theme
+    var theme = vi.theme;
     
-    if (typeof theme === 'object') {
+    if (typeof theme === 'object' && isValid) {
       var value = second ? theme. secondaryColor : theme.mainColor;
       return STYLE_PROCESSOR[key](value)
     }

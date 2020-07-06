@@ -1,19 +1,20 @@
 
 <view class="select-tab font14 color-black"> 
   <view class="component-container flex-center-between">
-    <view class="select {{ defaultSelect ? 'panel-select' : '' }}" bind:tap="togglePanel">
+    <view class="select {{ defaultSelect ? 'panel-select' : '' }}" style="{{_.s(vi, 'color', false, defaultSelect)}}" bind:tap="togglePanel">
       <text>{{default}}</text>
-      <text class="{{showPanel ? 'arrow-top' : 'arrow-bottom' }} {{defaultSelect ? 'arrow-select' : ''}}"></text>
+      <text class="{{showPanel ? 'arrow-top' : 'arrow-bottom' }} {{defaultSelect ? 'arrow-select' : ''}}" style="{{_.s(vi, 'border-color', false, defaultSelect)}}"></text>
     </view>
     <view class="tab flex-full flex">
-      <text class="tab-item flex-full {{item.select ? 'tab-item__select' : ''}}" wx:for="{{tabs}}" wx:key="index" wx:for-item="item" data-index="{{index}}" bind:tap="toggleTab">{{item.value}}</text>
+      <text class="tab-item flex-full {{item.select ? 'tab-item__select' : ''}}" style="{{_.s(vi, 'color', false, item.select)}}" wx:for="{{tabs}}" wx:key="index" wx:for-item="item" data-index="{{index}}" bind:tap="toggleTab">{{item.value}}</text>
     </view>
   </view>
   <view class="select-panel {{ showPanel ? 'options-panel__show' : '' }}">
-    <view class="flex-center-between option-item {{ item.select ? 'option-item__select' : '' }}" wx:for="{{options}}" wx:key="index" wx:for-item="item" data-index="{{index}}" bind:tap="toggleOption">  
+    <view class="flex-center-between option-item {{ item.select ? 'option-item__select' : '' }}" style="{{_.s(vi, 'color', false, item.select)}}" wx:for="{{options}}" wx:key="index" wx:for-item="item" data-index="{{index}}" bind:tap="toggleOption">  
       <text>{{item.value}}</text>
-      <image class="check-icon" wx:if="{{item.select}}" src="/images/icon_checkbox_selected.png"></image>
+      <image class="check-icon" wx:if="{{item.select}}" style="{{_.s(vi, 'background', false, item.select)}}" src="/images/icon_checkbox_selected.png"></image>
     </view>
   </view>
   <view class="mask mask {{showPanel ? 'mask-show' : ''}}">   </view>
 </view>
+<wxs src="../../wxs/vi.wxs" module="_"> </wxs>

@@ -1,4 +1,8 @@
+const viBehavior = require('../../behavior/viBehavior');
+
 Component({
+  behaviors: [viBehavior],
+
   properties: {
     default: {
       type: 'String',

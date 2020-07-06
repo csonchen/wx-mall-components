@@ -2,16 +2,19 @@ view.select-tab.font14.color-black
   view.component-container.flex-center-between
     view(
       class="select {{ defaultSelect ? 'panel-select' : '' }}"
+      style="{{_.s(vi, 'color', false, defaultSelect)}}"
       bind:tap="togglePanel"
     )
       text {{default}}
       text(
         class="{{showPanel ? 'arrow-top' : 'arrow-bottom' }} {{defaultSelect ? 'arrow-select' : ''}}"
+        style="{{_.s(vi, 'border-color', false, defaultSelect)}}"
       )
 
     view.tab.flex-full.flex
       text(
         class="tab-item flex-full {{item.select ? 'tab-item__select' : ''}}"
+        style="{{_.s(vi, 'color', false, item.select)}}"
         wx:for="{{tabs}}"
         wx:key="index"
         wx:for-item="item"
@@ -24,6 +27,7 @@ view.select-tab.font14.color-black
   )
     view(
       class="flex-center-between option-item {{ item.select ? 'option-item__select' : '' }}"
+      style="{{_.s(vi, 'color', false, item.select)}}"
       wx:for="{{options}}"
       wx:key="index"
       wx:for-item="item"
@@ -34,9 +38,10 @@ view.select-tab.font14.color-black
       image(
         wx:if="{{item.select}}"
         class="check-icon"
+        style="{{_.s(vi, 'background', false, item.select)}}"
         src="/images/icon_checkbox_selected.png"
       )
 
-  view.mask(
-    class="mask {{showPanel ? 'mask-show' : ''}}"
-  )    
+  view.mask(class="mask {{showPanel ? 'mask-show' : ''}}")    
+
+wxs(src="../../wxs/vi.wxs" module="_")  

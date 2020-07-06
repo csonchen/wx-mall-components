@@ -16,7 +16,7 @@
   border-top: 5px solid #999;
 }
 /* 箭头 */
-.arrow-bottom::after {
+.arrow-bottom {
   content: '';
   display: inline-block;
   width: 4px;
@@ -26,7 +26,7 @@
   border-radius: 1px;
   transform: translate(5px, -2px) rotate(135deg);
 }
-.arrow-top::after {
+.arrow-top {
   content: '';
   display: inline-block;
   width: 4px;
@@ -36,6 +36,6 @@
   border-radius: 1px;
   transform: translate(5px, 0) rotate(-45deg);
 }
-.arrow-select::after {
-  border-color: #0188ff !important;
+.arrow-select {
+  border-color: #0188ff;
 }

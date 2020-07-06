@@ -8,9 +8,5 @@ Component({
       type: Array,
       value: []
     }
-  },
-
-  attached() {
-    console.log(this.data)
   }
 })
