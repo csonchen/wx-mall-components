@@ -5,6 +5,9 @@
     <view class="page__desc">本项目主要是针对线上商城小程序日常用到的一些UI组件进行封装整理，抽离出大部分复用性高的组件供大家使用</view>
   </view>
   <view class="page__bd page__bd_spacing">
+    <view class="skin">
+      <skin></skin>
+    </view>
     <view class="page__li"> 
       <view class="li__view bottom-line" data-type="base" bindtap="togglePanel">
         <view class="flex li-container">

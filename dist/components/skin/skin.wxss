@@ -1,0 +1,77 @@
+.flex,
+.flex-row,
+.flex-column,
+.flex-center-xy,
+.flex-center-between,
+.flex-top-between {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-left {
+  justify-content: flex-start;
+}
+.flex-center,
+.flex-center-xy {
+  justify-content: center;
+}
+.flex-right {
+  justify-content: flex-end;
+}
+.flex-space-between,
+.flex-center-between,
+.flex-top-between {
+  justify-content: space-between;
+}
+.flex-space-around {
+  justify-content: space-around;
+}
+.flex-top,
+.flex-top-between {
+  align-items: flex-start;
+}
+.flex-middle,
+.flex-center-xy,
+.flex-center-between {
+  align-items: center;
+}
+.flex-bottom {
+  align-items: flex-end;
+}
+.flex-stretch {
+  align-items: stretch;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-full {
+  flex: 1;
+}
+.color-item {
+  width: 20px;
+  height: 20px;
+}
+.skin-item {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding: 4px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+.skin-item.selected {
+  border: 1px solid #1976d2;
+}
+.skin-title {
+  font-size: 14px;
+  padding-top: 4px;
+}
+.skin-color {
+  margin-left: 10px;
+}

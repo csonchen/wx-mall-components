@@ -1,0 +1,14 @@
+view.skin.flex.flex-top
+  view.skin-title 皮肤 :
+
+  view.flex-full.flex.skin-color.flex-wrap
+    view(
+      class="skin-item flex {{current == index ? 'selected' : ''}}"
+      wx:for="{{skins}}"
+      wx:key="index"
+      wx:for-item="item"
+      data-index="{{index}}"
+      bindtap="handleSelect"
+    )
+      view.color-item.main(style="background: {{item.main}};")
+      view.color-item.sub(style="background: {{item.sub}};")
