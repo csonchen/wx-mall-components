@@ -4,5 +4,12 @@ view.grid
     wx:for-item="item"
     wx:key="index"
   )
-    view.font16.color-blue {{item.title}}
+    view.font16.color-blue(
+      style="{{_.s(vi, 'color')}}"
+    ) {{item.title}}
     view.font12.color-gray {{item.tips}}    
+
+wxs(
+  src="../../wxs/vi.wxs"
+  module="grid"
+)    

@@ -6,8 +6,14 @@ module.exports = Behavior({
   },
 
   attached() {
+    const { main: mainColor, sub: secondaryColor } = SkinModel.getSkin()
     this.setData({ 
-      vi: SkinModel.getSkin()
+      vi: {
+        theme: {
+          mainColor,
+          secondaryColor,
+        }
+      }
     })
   }
 })

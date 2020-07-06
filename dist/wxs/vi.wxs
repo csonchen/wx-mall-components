@@ -1,0 +1,18 @@
+var STYLE_PROCESSOR = {
+  color: function(value) {
+    return "color: " + value + " !important;";
+  }
+}
+
+module.exports = {
+  s: function(vi, key, second) {
+    vi = vi || {};
+    second = second || false;
+    var theme = vi.theme
+    
+    if (typeof theme === 'object') {
+      var value = second ? theme. secondaryColor : theme.mainColor;
+      return STYLE_PROCESSOR[key](value)
+    }
+  }
+}
