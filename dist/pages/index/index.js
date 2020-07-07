@@ -9,6 +9,7 @@ Page({
     baseData: [
       { value: '搜索框', link: '/pages/searchPage/searchPage' },
       { value: '提示语弹出框', link: '/pages/toastPage/toastPage' },
+      { value: '提示语状态栏', link: '/pages/toptipsPage/toptipsPage' },
       { value: '下拉选择器', link: '/pages/dropdownSelectPage/dropdownSelectPage' },
       { value: '下拉选择+选项卡组合器', link: '/pages/selectTabPage/selectTabPage' },
       { value: 'grid格子布局', link: '/pages/gridPage/gridPage' },

@@ -1,0 +1,19 @@
+
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">toptips</view>
+    <view class="page__desc">提示状态栏</view>
+  </view>
+  <view>
+    <toptips content="我是提示语警告状态栏"></toptips>
+  </view>
+  <view class="mt15">
+    <toptips content="我是提示语警告圆角状态栏" radius="radius"> </toptips>
+  </view>
+  <view class="mt15 mb10">
+    <toptips content="我是提示语错误状态栏" error="error"></toptips>
+  </view>
+  <view class="page__bd page__bd_spacing"> 
+    <wxParse nodes="{{doc}}"></wxParse>
+  </view>
+</view>

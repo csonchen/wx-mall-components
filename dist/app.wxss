@@ -457,7 +457,7 @@
   transition: max-height 0.2s ease-out;
 }
 .subli-container.show {
-  max-height: 400px;
+  max-height: 500px;
   transition: max-height 0.25s ease-in;
 }
 .subli__view {

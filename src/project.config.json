@@ -135,7 +135,14 @@
 					"pathName": "pages/productPicinfoviewPage/productPicinfoviewPage",
 					"query": "",
 					"scene": null
-				}									
+				},
+				{
+					"id": 11,
+					"name": "pages/toptipsPage/toptipsPage",
+					"pathName": "pages/toptipsPage/toptipsPage",
+					"query": "",
+					"scene": null
+				}											
 			]
 		}
 	}

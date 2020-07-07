@@ -1,0 +1,16 @@
+view.page
+  - var title = "toptips"
+  - var desc = "提示状态栏"
+  include ../../templates/pageHead.pug
+  
+  view
+    toptips(content="我是提示语警告状态栏")
+
+  view.mt15
+    toptips(content="我是提示语警告圆角状态栏" radius)  
+
+  view.mt15.mb10
+    toptips(content="我是提示语错误状态栏" error)
+
+  view.page__bd.page__bd_spacing  
+    wxParse(nodes="{{doc}}")

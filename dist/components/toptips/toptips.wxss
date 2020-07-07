@@ -1,0 +1,13 @@
+.toptips {
+  padding: 10px;
+  background: #fffbeb;
+  color: #f89d14;
+  font-size: 12px;
+}
+.toptips.tooltips__radius {
+  border-radius: 10px;
+}
+.toptips.tooltips__error {
+  color: #fff;
+  background: #ff2332;
+}

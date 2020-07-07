@@ -4,6 +4,7 @@
 
     "pages/searchPage/searchPage",
     "pages/toastPage/toastPage",
+    "pages/toptipsPage/toptipsPage",
     "pages/dropdownSelectPage/dropdownSelectPage",
     "pages/selectTabPage/selectTabPage",
     "pages/gridPage/gridPage",
