@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "wxParse": "/miniprogram_npm/wx-minicomponent/wxParse",
-    "toptips": "/components/toptips/toptips"
-  }
-}
