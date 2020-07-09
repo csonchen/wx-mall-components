@@ -1,10 +1,10 @@
-view.product-picinfoview.flex(
-  class="classname"
-)
+view.product-picinfoview.flex.classname
   view.product-image
-    image.pro-image(src="")
-    view.bottom-mask.color-white.font10.red 已上架
+    image.pro-image(src="{{productPrimaryImage}}")
+    view.bottom-mask.color-white.font10.red(
+      class!="bottom-mask color-white font10 {{marketable ? (totalStock <= 0 ? 'red' : 'yellow') : ''}}"
+    ) {{marketable ? (totalStock <= 0 ? "已售罄" : "已上架") : ""}}
 
   view.flex-full.ml10
-    view.pro-name.font14.color-black.text-flow2 标题
-    view.pro-store.font12.color-gray 提示  
+    view.pro-name.font14.color-black.text-flow2 {{productName}}
+    view.pro-store.font12.color-gray {{shopName}}  

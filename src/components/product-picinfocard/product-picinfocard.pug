@@ -1,17 +1,39 @@
-view.product-picinfocard 
-  product-picinfoview(classname="infoview")
+view.product-picinfocard.classname
+  product-picinfoview(
+    classname="infoview"
+    productPrimaryImage="{{product.productPrimaryImage}}"
+    productName="{{product.productName}}"
+    shopName="{{product.shopName}}"
+    marketable="{{product.marketable}}"
+    totalStock="{{product.totalStock}}"
+  )
   grid(list="{{grids}}")
 
   view.price-area
     view.text-right 
       text.font12 销售价：
-      text.price-label ¥
-      text.font16 189
-      text.font12 .9
-      text.font16 ～ 
-      text ¥
-      text.font16 219
-      text.font12 .9
+      block(
+        wx:if="{{product.minSalePrice == product.maxSalePrice}}"
+      )
+        text.price-label ¥
+        text.font16 {{minSaleMain}}
+        text.font12(
+          wx:if="{{minSaleSub}}"
+        ) .{{minSaleSub}}
+      block(
+        wx:if="{{product.minSalePrice != product.maxSalePrice}}"
+      )
+        text.price-label ¥
+        text.font16 {{minSaleMain}}
+        text.font12(
+          wx:if="{{minSaleSub}}"
+        ) .{{minSaleSub}}
+        text.font16 ～
+        text.price-label ¥
+        text.font16 {{maxSaleMain}}
+        text.font12(
+          wx:if="{{maxSaleSub}}"
+        ) .{{maxSaleSub}}
 
   view.btn-group.text-right.top-line
     lz-button(class="mr10" label="分享商品")

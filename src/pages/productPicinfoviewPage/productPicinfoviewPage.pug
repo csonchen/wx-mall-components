@@ -5,7 +5,15 @@ view.page
 
   view.page__bd.page__bd_spacing
     view.mb15.bold product-picinfoview
-    product-picinfoview
+    product-picinfoview(
+      productPrimaryImage="{{infoView.productPrimaryImage}}"
+      productName="{{infoView.productName}}"
+      shopName="{{infoView.shopName}}"
+      marketable="{{infoView.marketable}}"
+      totalStock="{{infoView.infoView}}"
+    )
 
     view.mb15.bold.mt20 product-picinfocard
-    product-picinfocard
+    product-picinfocard(
+      product="{{product}}"
+    )

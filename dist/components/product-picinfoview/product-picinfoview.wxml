@@ -1,11 +1,11 @@
 
 <view class="product-picinfoview flex classname">
   <view class="product-image">
-    <image class="pro-image" src=""></image>
-    <view class="bottom-mask color-white font10 red">已上架</view>
+    <image class="pro-image" src="{{productPrimaryImage}}"></image>
+    <view class="bottom-mask color-white font10 red bottom-mask color-white font10 {{marketable ? (totalStock <= 0 ? 'red' : 'yellow') : ''}}">{{marketable ? (totalStock <= 0 ? "已售罄" : "已上架") : ""}}</view>
   </view>
   <view class="flex-full ml10">
-    <view class="pro-name font14 color-black text-flow2">标题</view>
-    <view class="pro-store font12 color-gray">提示  </view>
+    <view class="pro-name font14 color-black text-flow2">{{productName}}</view>
+    <view class="pro-store font12 color-gray">{{shopName}}  </view>
   </view>
 </view>
