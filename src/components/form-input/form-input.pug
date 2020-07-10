@@ -12,7 +12,7 @@ view.form-input.flex-center-between(
       placeholder-class='input-place'
     )
     // 文本
-    text.cell-foot {{foot}}
+    text.cell-foot(style="color: {{footColor}}") {{foot}}
     // 箭头
     image(
       wx:if="{{link || type == 'link'}}"

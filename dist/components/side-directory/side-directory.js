@@ -73,7 +73,7 @@ Component({
 
   data: {
     current: 0,
-    cons: [],
+    cons: null,
   },
 
   methods: {

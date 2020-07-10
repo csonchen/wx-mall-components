@@ -5,6 +5,9 @@
     <view class="page__desc">目录组件说明</view>
   </view>
   <view>
+    <piclist-directory></piclist-directory>
+  </view>
+  <view class="mt20">
     <side-directory></side-directory>
   </view>
 </view>

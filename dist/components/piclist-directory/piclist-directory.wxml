@@ -1,0 +1,7 @@
+
+<view class="piclist-directory"> 
+  <view class="header">
+    <form-input title="已选择颜色" foot="已选规格值排序" footColor="#0188FF" link="https://www.baidu.com"></form-input>
+  </view>
+  <view class="body"></view>
+</view>

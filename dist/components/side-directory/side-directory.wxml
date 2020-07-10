@@ -10,7 +10,7 @@
     </view>
     <view class="container">
       <view class="con-list flex flex-left flex-wrap">
-        <view class="con-item flex-center-xy {{item.selected ? 'con-item__select' : ''}}" wx:for="{{cons}}" wx:for-item="item" wx:key="index" data-current="{{index}}" data-id="{{item.id}}" bindtap="selectCon">{{item.spceName}}</view>
+        <view class="con-item flex-center-xy {{item.selected ? 'con-item__select' : ''}}" wx:for="{{cons == null ? specs[0].children : cons}}" wx:for-item="item" wx:key="index" data-current="{{index}}" data-id="{{item.id}}" bindtap="selectCon">{{item.spceName}}</view>
       </view>
     </view>
   </view>

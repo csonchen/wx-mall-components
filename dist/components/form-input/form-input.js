@@ -30,6 +30,10 @@ Component({
       type: String,
       value: ''
     },
+    footColor: {
+      type: String,
+      value: '#999',
+    },
     checkbox: {
       type: Boolean,
       value: false,

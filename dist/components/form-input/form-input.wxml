@@ -5,7 +5,7 @@
     <!-- 输入框-->
     <input class="input-val" wx:if="{{input || type == 'input'}}" placeholder="{{placeholder}}" placeholder-class="input-place"/>
     <!-- 文本-->
-    <text class="cell-foot">{{foot}}</text>
+    <text class="cell-foot" style="color: {{footColor}}">{{foot}}</text>
     <!-- 箭头-->
     <image class="link-icon" wx:if="{{link || type == 'link'}}" src="/images/icon_extended_gray.png"></image>
     <!-- 复选框-->

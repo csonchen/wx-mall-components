@@ -19,7 +19,7 @@ view.side-directory
       view.con-list.flex.flex-left.flex-wrap
         view(
           class="con-item flex-center-xy {{item.selected ? 'con-item__select' : ''}}"
-          wx:for="{{cons}}"
+          wx:for="{{cons == null ? specs[0].children : cons}}"
           wx:for-item="item"
           wx:key="index"
           data-current="{{index}}"

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "side-directory": "/components/side-directory/side-directory"
+    "side-directory": "/components/side-directory/side-directory",
+    "piclist-directory": "/components/piclist-directory/piclist-directory"
   }
 }
