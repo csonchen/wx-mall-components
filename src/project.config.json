@@ -142,7 +142,14 @@
 					"pathName": "pages/toptipsPage/toptipsPage",
 					"query": "",
 					"scene": null
-				}											
+				},
+				{
+					"id": 12,
+					"name": "pages/directoryPage/directoryPage",
+					"pathName": "pages/directoryPage/directoryPage",
+					"query": "",
+					"scene": null
+				}												
 			]
 		}
 	}

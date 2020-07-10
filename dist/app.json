@@ -14,6 +14,7 @@
     "pages/richTextPage/richTextPage",
     "pages/richEditorPage/richEditorPage",
     "pages/datePickerPage/datePickerPage",
+    "pages/directoryPage/directoryPage",
 
     "pages/inputPage/inputPage",
 

@@ -20,6 +20,7 @@ Page({
       { value: '富文本解析展示', link: '/pages/richTextPage/richTextPage' },
       { value: '富文本编辑器', link: '/pages/richEditorPage/richEditorPage' },
       { value: '日期选择器', link: '/pages/datePickerPage/datePickerPage' },
+      { value: '目录类型组件', link: '/pages/directoryPage/directoryPage' }
     ],
     formData: [
       { value: '输入框', link: '/pages/inputPage/inputPage' }

@@ -1,0 +1,10 @@
+
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">directory components</view>
+    <view class="page__desc">目录组件说明</view>
+  </view>
+  <view>
+    <side-directory></side-directory>
+  </view>
+</view>

@@ -1,3 +1,6 @@
 {
-  "component": true
+  "component": true,
+  "usingComponents": {
+    "lz-button": "../lz-button/lz-button"
+  }
 }

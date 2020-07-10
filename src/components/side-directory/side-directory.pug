@@ -1,1 +1,32 @@
-view.side-directory side...
+view.side-directory 
+  view.flex
+    view.side
+      view(
+        class="side-item flex-center-xy {{current == index ? 'side-item-select' : ''}} {{current - 1 == index ? 'side-item-select__first' : ''}} {{current + 1 == index ? 'side-item-select__after' : ''}}"
+        wx:for="{{specs}}"
+        wx:for-item="item"
+        wx:key="index"
+        data-id="{{item.id}}"
+        data-current="{{index}}"
+        bindtap="selectSide"
+      )
+        text(class="{{current == index ? 'side-vertical' : ''}}")
+        text {{item.specName}}
+
+      view.side-item-last
+
+    view.container
+      view.con-list.flex.flex-left.flex-wrap
+        view(
+          class="con-item flex-center-xy {{item.selected ? 'con-item__select' : ''}}"
+          wx:for="{{cons}}"
+          wx:for-item="item"
+          wx:key="index"
+          data-current="{{index}}"
+          data-id="{{item.id}}"
+          bindtap="selectCon"
+        ) {{item.spceName}}
+
+
+  view.operate(wx:if="{{operateBtn}}")
+    lz-button(styleName="font-size: 16px; width: 100%; height: 44px; line-height: 44px; border-radius: 22px;" label="{{operateBtn}}" type="blue")
