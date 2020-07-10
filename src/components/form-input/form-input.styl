@@ -1,4 +1,5 @@
 @import '../../styles/flex.styl';
+@import '../../styles/plugin.styl';
 
 .form-input
   background #ffffff
@@ -41,3 +42,26 @@
   .check-icon
     width 20px
     height 20px  
+
+.sort-item
+  width 20px
+  height 20px
+  border-radius 2px
+  text-align center   
+  box-sizing border-box
+  border 1rpx solid #999999 
+  &:last-child
+    margin-left 15px
+
+sort-radius = 2px
+.sort-top
+  border-left-width 5px
+  border-right-width 5px
+  border-bottom-width 7px  
+  border-radius sort-radius
+
+.sort-bottom
+  border-left-width 5px
+  border-right-width 5px
+  border-top-width 7px  
+  border-radius sort-radius

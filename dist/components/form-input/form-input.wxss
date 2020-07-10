@@ -54,6 +54,45 @@
 .flex-full {
   flex: 1;
 }
+.triangle-top {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 5px solid #999;
+}
+.triangle-bottom {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #999;
+}
+.arrow-bottom {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 0 solid #cecece;
+  border-width: 2px 2px 0 0;
+  border-radius: 1px;
+  transform: translate(5px, -2px) rotate(135deg);
+}
+.arrow-top {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 0 solid #cecece;
+  border-width: 2px 2px 0 0;
+  border-radius: 1px;
+  transform: translate(5px, 0) rotate(-45deg);
+}
+.arrow-select {
+  border-color: #0188ff;
+}
 .form-input {
   background: #fff;
   padding: 10px 12px;
@@ -96,4 +135,27 @@
 .checkbox .check-icon {
   width: 20px;
   height: 20px;
+}
+.sort-item {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1rpx solid #999;
+}
+.sort-item:last-child {
+  margin-left: 15px;
+}
+.sort-top {
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width: 7px;
+  border-radius: 2px;
+}
+.sort-bottom {
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 7px;
+  border-radius: 2px;
 }

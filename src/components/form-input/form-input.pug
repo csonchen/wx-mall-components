@@ -6,7 +6,7 @@ view.form-input.flex-center-between(
   view.flex-full.cell-right.flex.flex-middle.flex-right
     // 输入框
     input(
-      wx:if="{{input}}"
+      wx:if="{{input || type == 'input'}}"
       class="input-val"
       placeholder='{{placeholder}}'
       placeholder-class='input-place'
@@ -15,16 +15,25 @@ view.form-input.flex-center-between(
     text.cell-foot {{foot}}
     // 箭头
     image(
-      wx:if="{{link}}"
+      wx:if="{{link || type == 'link'}}"
       class="link-icon"
       src="/images/icon_extended_gray.png"
     )
     // 复选框
     view(
-      wx:if="{{checkbox}}"
+      wx:if="{{checkbox || type == 'checkbox'}}"
       class="checkbox {{checked ? 'checkbox-checked' : ''}}"
     ) 
       image.check-icon(
         hidden="{{!checked}}"
         src="/images/icon_checkbox_selected.png"
       )
+    // 排序
+    view(
+      wx:if="{{sort || type == 'sort'}}"
+      class="flex"
+    )  
+      view.sort-item.flex-center-xy(wx:if="{{sort == 'up' || sort == 'all'}}")
+        text.triangle-top.sort-top
+      view.sort-item.flex-center-xy(wx:if="{{sort == 'down' || sort == 'all'}}")
+        text.triangle-bottom.sort-bottom  

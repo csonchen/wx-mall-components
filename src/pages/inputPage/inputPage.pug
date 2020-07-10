@@ -33,8 +33,26 @@ view.page
         checked
       )
 
+    view.mt15 
+      form-input(
+        classname="input-cell"
+        title="我是排序框"
+        sort="down"
+      )  
+      form-input(
+        classname="input-cell mt10"
+        title="我是排序框"
+        sort="all"
+      )
+      form-input(
+        classname="input-cell mt10"
+        title="我是排序框"
+        sort="up"
+      )
+
     view.mt15
       wxParse(
         nodes="{{doc}}"
         language="html"
       )
+

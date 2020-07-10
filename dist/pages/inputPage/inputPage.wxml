@@ -14,6 +14,11 @@
     <view class="mt15">
       <form-input classname="input-cell" title="我是复选框2" checkbox="checkbox" checked="checked"></form-input>
     </view>
+    <view class="mt15"> 
+      <form-input classname="input-cell" title="我是排序框" sort="down"> </form-input>
+      <form-input classname="input-cell mt10" title="我是排序框" sort="all"></form-input>
+      <form-input classname="input-cell mt10" title="我是排序框" sort="up"></form-input>
+    </view>
     <view class="mt15">
       <wxParse nodes="{{doc}}" language="html"></wxParse>
     </view>

@@ -3,14 +3,23 @@
   <view class="cell-left">{{title}}</view>
   <view class="flex-full cell-right flex flex-middle flex-right">
     <!-- 输入框-->
-    <input class="input-val" wx:if="{{input}}" placeholder="{{placeholder}}" placeholder-class="input-place"/>
+    <input class="input-val" wx:if="{{input || type == 'input'}}" placeholder="{{placeholder}}" placeholder-class="input-place"/>
     <!-- 文本-->
     <text class="cell-foot">{{foot}}</text>
     <!-- 箭头-->
-    <image class="link-icon" wx:if="{{link}}" src="/images/icon_extended_gray.png"></image>
+    <image class="link-icon" wx:if="{{link || type == 'link'}}" src="/images/icon_extended_gray.png"></image>
     <!-- 复选框-->
-    <view class="checkbox {{checked ? 'checkbox-checked' : ''}}" wx:if="{{checkbox}}"> 
+    <view class="checkbox {{checked ? 'checkbox-checked' : ''}}" wx:if="{{checkbox || type == 'checkbox'}}"> 
       <image class="check-icon" hidden="{{!checked}}" src="/images/icon_checkbox_selected.png"></image>
+    </view>
+    <!-- 排序-->
+    <view class="flex" wx:if="{{sort || type == 'sort'}}"> 
+      <view class="sort-item flex-center-xy" wx:if="{{sort == 'up' || sort == 'all'}}">
+        <text class="triangle-top sort-top"></text>
+      </view>
+      <view class="sort-item flex-center-xy" wx:if="{{sort == 'down' || sort == 'all'}}">
+        <text class="triangle-bottom sort-bottom"> </text>
+      </view>
     </view>
   </view>
 </view>

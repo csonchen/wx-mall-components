@@ -2,6 +2,10 @@ Component({
   externalClasses: ['classname'],
 
   properties: {
+    type: {
+      type: String,
+      value: '', // sort || input || link || checkbox
+    },
     input: {
       type: Boolean,
       value: false
@@ -33,6 +37,10 @@ Component({
     checked: {
       type: Boolean,
       value: false,
+    },
+    sort: {
+      type: String,
+      value: '', // up || down || all
     }
   },
 
