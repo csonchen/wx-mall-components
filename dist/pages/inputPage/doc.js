@@ -9,6 +9,12 @@ module.exports = {
     <th>例子</th>
   </tr>
   <tr>
+    <td>type</td>
+    <td>类型</td>
+    <td>String</td>
+    <td>default:<br /> sort || input || link || checkbox</td>
+  </tr>   
+  <tr>
     <td>input</td>
     <td>右侧是否为输入框类型</td>
     <td>Boolean</td>
@@ -49,7 +55,13 @@ module.exports = {
     <td>是否选中</td>
     <td>Boolean</td>
     <td>default:<br /> false</td>
-  </tr>      
+  </tr>
+  <tr>
+    <td>sort</td>
+    <td>排序方向</td>
+    <td>String</td>
+    <td>default:<br /> up || down || all</td>
+  </tr>         
   </table>
   <br />
   `
