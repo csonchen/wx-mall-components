@@ -1,3 +1,5 @@
+const { doc } = require('./doc');
+
 Page({
   data: {
     infoView: {
