@@ -1,5 +1,5 @@
-view.form-input.flex-center-between(
-  class="classname"
+view(
+  class="form-input flex-center-between classname {{topHalfRadius ? 'top-radius' : ''}} {{bottomHalfRadius ? 'bottom-radius' : ''}}"
   bindtap="handleClick"
 )
   view.cell-left {{title}}

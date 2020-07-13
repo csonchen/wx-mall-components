@@ -1,5 +1,5 @@
 
-<view class="form-input flex-center-between classname" bindtap="handleClick">
+<view class="form-input flex-center-between classname {{topHalfRadius ? 'top-radius' : ''}} {{bottomHalfRadius ? 'bottom-radius' : ''}}" bindtap="handleClick">
   <view class="cell-left">{{title}}</view>
   <view class="flex-full cell-right flex flex-middle flex-right">
     <!-- 输入框-->

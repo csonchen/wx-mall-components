@@ -3,5 +3,63 @@
   <view class="header">
     <form-input title="已选择颜色" foot="已选规格值排序" footColor="#0188FF" link="https://www.baidu.com"></form-input>
   </view>
-  <view class="body"></view>
+  <view class="body">
+    <view class="cell-item flex">
+      <view class="main">
+        <view class="main-text">雪白色</view>
+        <image class="clear-icon" src="/images/icon_clear_samll_grey.png"></image>
+      </view>
+      <view class="sub-list flex flex-full">
+        <view class="sub-item">
+          <image class="sub-image" src=""></image>
+          <image class="clear-icon" src="/images/icon_clear_samll_grey.png"></image>
+          <view class="foot-mask">主图</view>
+        </view>
+        <view class="sub-item">
+          <image class="sub-image" src=""></image>
+          <image class="clear-icon" src="/images/icon_clear_samll_grey.png"></image>
+        </view>
+        <view class="sub-item">
+          <image class="sub-image" src=""></image>
+          <image class="clear-icon" src="/images/icon_clear_samll_grey.png">  </image>
+        </view>
+        <view class="sub-item">
+          <image class="sub-image" src=""></image>
+          <image class="clear-icon" src="/images/icon_clear_samll_grey.png"></image>
+        </view>
+        <view class="sub-item">
+          <image class="sub-image" src=""></image>
+          <image class="clear-icon" src="/images/icon_clear_samll_grey.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="cell-item flex">
+      <view class="main">
+        <view class="main-text">雪白色</view>
+        <image class="clear-icon" src="/images/icon_clear_samll_grey.png"></image>
+      </view>
+      <view class="sub-list flex flex-full">
+        <view class="sub-item">
+          <image class="sub-image" src=""></image>
+          <image class="clear-icon" src="/images/icon_clear_samll_grey.png"></image>
+          <view class="foot-mask">主图</view>
+        </view>
+        <view class="sub-item">
+          <image class="sub-image" src=""></image>
+          <image class="clear-icon" src="/images/icon_clear_samll_grey.png"></image>
+        </view>
+        <view class="sub-item">
+          <image class="sub-image" src=""></image>
+          <image class="clear-icon" src="/images/icon_clear_samll_grey.png">  </image>
+        </view>
+        <view class="sub-item">
+          <image class="sub-image" src=""></image>
+          <image class="clear-icon" src="/images/icon_clear_samll_grey.png"></image>
+        </view>
+        <view class="sub-item">
+          <image class="camera-image" src="/images/icon_camera_big.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

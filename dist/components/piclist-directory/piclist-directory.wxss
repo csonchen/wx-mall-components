@@ -54,3 +54,68 @@
 .flex-full {
   flex: 1;
 }
+.piclist-directory {
+  background: #fff;
+}
+.body {
+  padding: 12px;
+}
+.main {
+  position: relative;
+}
+.main-text {
+  border: 1rpx solid #999;
+  width: 66px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  font-size: 12px;
+}
+.clear-icon {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  background: #fff;
+}
+.cell-item {
+  margin-bottom: 15px;
+}
+.cell-item:last-child {
+  margin-bottom: 0;
+}
+.sub-item {
+  position: relative;
+  margin-left: 20px;
+}
+.sub-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background: #f6f6f6;
+  display: block;
+}
+.camera-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  display: block;
+}
+.foot-mask {
+  height: 14px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 14px;
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  border-radius: 0 0 4px 4px;
+}

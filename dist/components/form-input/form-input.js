@@ -6,6 +6,14 @@ Component({
       type: String,
       value: '', // sort || input || link || checkbox
     },
+    topHalfRadius: {
+      type: Boolean,
+      value: false,
+    },
+    bottomHalfRadius: {
+      type: Boolean,
+      value: false,
+    },
     input: {
       type: Boolean,
       value: false

@@ -168,3 +168,9 @@
   border-top-width: 7px;
   border-radius: 2px;
 }
+.top-radius {
+  border-radius: 10px 10px 0 0;
+}
+.bottom-radius {
+  border-radius: 0 0 10px 10px;
+}
