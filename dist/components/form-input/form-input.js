@@ -1,5 +1,11 @@
+const LINK_TYPES = ['navigateTo', 'redirectTo']
+
 Component({
   externalClasses: ['classname'],
+
+  options: {
+    multipleSlots: true
+  },
 
   properties: {
     type: {
@@ -22,6 +28,10 @@ Component({
       type: String,
       value: ''
     },
+    linkType: {
+      type: String,
+      value: '', //'navigateTo'
+    },
     radio: {
       type: Boolean,
       value: false,
@@ -33,6 +43,10 @@ Component({
     title: {
       type: String,
       value: ''
+    },
+    titleColor: {
+      type: String,
+      value: '#323232'
     },
     foot: {
       type: String,
@@ -53,20 +67,30 @@ Component({
     sort: {
       type: String,
       value: '', // up || down || all
+    },
+    fields: {
+      type: Object,
+      value: null,
     }
   },
 
   methods: {
     handleClick() {
-      const { link, checkbox } = this.data
+      const { link, checkbox, linkType } = this.data
       if (link) {
-        console.log('你点击我了：' + link)
+        if (LINK_TYPES.indexOf(linkType) > -1) {
+          wx[linkType]({
+            url: link
+          }) 
+        }
         this.triggerEvent('cellclick', link)
       }
       if (checkbox) {
+        const checked = !this.data.checked
         this.setData({ 
-          checked: !this.data.checked
+          checked
         })
+        this.triggerEvent('cellclick', { ...this.data.fields, checked })
       }
     }
   }

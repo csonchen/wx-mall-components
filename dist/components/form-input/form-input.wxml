@@ -1,6 +1,6 @@
 
 <view class="form-input flex-center-between classname {{topHalfRadius ? 'top-radius' : ''}} {{bottomHalfRadius ? 'bottom-radius' : ''}}" bindtap="handleClick">
-  <view class="cell-left">{{title}}</view>
+  <view class="cell-left" style="color: {{titleColor}}">{{title}}</view>
   <view class="flex-full cell-right flex flex-middle flex-right">
     <!-- 输入框-->
     <input class="input-val" wx:if="{{input || type == 'input'}}" placeholder="{{placeholder}}" placeholder-class="input-place"/>

@@ -2,7 +2,9 @@ view(
   class="form-input flex-center-between classname {{topHalfRadius ? 'top-radius' : ''}} {{bottomHalfRadius ? 'bottom-radius' : ''}}"
   bindtap="handleClick"
 )
-  view.cell-left {{title}}
+  view.cell-left(
+    style="color: {{titleColor}}"
+  ) {{title}}
   view.flex-full.cell-right.flex.flex-middle.flex-right
     // 输入框
     input(
