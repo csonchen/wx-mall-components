@@ -92,6 +92,10 @@ Component({
         })
         this.triggerEvent('cellclick', { ...this.data.fields, checked })
       }
+    },
+
+    handleTitleClick() {
+      this.triggerEvent('titleclick')
     }
   }
 })

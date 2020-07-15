@@ -10,11 +10,11 @@
 		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
-		"coverView": true,
-		"nodeModules": true,
 		"autoAudits": false,
+		"coverView": true,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
+		"nodeModules": true,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -149,7 +149,7 @@
 					"pathName": "pages/directoryPage/directoryPage",
 					"query": "",
 					"scene": null
-				}
+				}												
 			]
 		}
 	}
