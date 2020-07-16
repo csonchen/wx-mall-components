@@ -14,11 +14,11 @@
     </view>
     <!-- 排序-->
     <view class="flex" wx:if="{{sort || type == 'sort'}}"> 
-      <view class="sort-item flex-center-xy" wx:if="{{sort == 'up' || sort == 'all'}}">
-        <text class="triangle-top sort-top"></text>
+      <view class="sort-item flex-center-xy" wx:if="{{sort == 'up' || sort == 'all'}}" data-sort-type="up">
+        <text class="triangle-top sort-top" data-sort-type="up"></text>
       </view>
-      <view class="sort-item flex-center-xy" wx:if="{{sort == 'down' || sort == 'all'}}">
-        <text class="triangle-bottom sort-bottom"> </text>
+      <view class="sort-item flex-center-xy" wx:if="{{sort == 'down' || sort == 'all'}}" data-sort-type="down">
+        <text class="triangle-bottom sort-bottom" data-sort-type="down"> </text>
       </view>
     </view>
   </view>

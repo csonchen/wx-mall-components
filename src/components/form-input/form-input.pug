@@ -36,7 +36,7 @@ view(
       wx:if="{{sort || type == 'sort'}}"
       class="flex"
     )  
-      view.sort-item.flex-center-xy(wx:if="{{sort == 'up' || sort == 'all'}}")
-        text.triangle-top.sort-top
-      view.sort-item.flex-center-xy(wx:if="{{sort == 'down' || sort == 'all'}}")
-        text.triangle-bottom.sort-bottom  
+      view.sort-item.flex-center-xy(wx:if="{{sort == 'up' || sort == 'all'}}" data-sort-type="up")
+        text.triangle-top.sort-top(data-sort-type="up")
+      view.sort-item.flex-center-xy(wx:if="{{sort == 'down' || sort == 'all'}}" data-sort-type="down")
+        text.triangle-bottom.sort-bottom(data-sort-type="down")  

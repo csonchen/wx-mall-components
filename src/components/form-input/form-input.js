@@ -76,7 +76,8 @@ Component({
 
   methods: {
     handleClick() {
-      const { link, checkbox, linkType } = this.data
+      const { sortType } = e.target.dataset
+      const { link, checkbox, linkType, sort } = this.data
       if (link) {
         if (LINK_TYPES.indexOf(linkType) > -1) {
           wx[linkType]({
@@ -91,6 +92,9 @@ Component({
           checked
         })
         this.triggerEvent('cellclick', { ...this.data.fields, checked })
+      }
+      if (sort && sortType) {
+        this.triggerEvent('cellclick', { ...this.data.fields, sort: sortType })
       }
     },
 
