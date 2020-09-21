@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "wx-minicomponent": "^1.0.7"
+    "wx-minicomponent": "^1.0.7",
+    "rich-parse": "^1.0.5"
   }
 }

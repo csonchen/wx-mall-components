@@ -19,7 +19,9 @@
     "pages/inputPage/inputPage",
 
     "pages/orderPicinfoviewPage/orderPicinfoviewPage",
-    "pages/productPicinfoviewPage/productPicinfoviewPage"
+    "pages/productPicinfoviewPage/productPicinfoviewPage",
+
+    "pages/richParsePage/richParsePage"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "富文本解析",
+  "usingComponents": {
+    "wxParse2": "/miniprogram_npm/wx-minicomponent/wxParse",
+    "wxParse": "/miniprogram_npm/rich-parse/wxParse/wxParse"
+  }
+}

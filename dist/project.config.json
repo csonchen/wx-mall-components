@@ -1,156 +1,171 @@
 {
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
-	"setting": {
-		"urlCheck": false,
-		"es6": true,
-		"postcss": true,
-		"preloadBackgroundData": false,
-		"minified": true,
-		"newFeature": true,
-		"autoAudits": false,
-		"coverView": true,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"nodeModules": true,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		},
-		"useCompilerModule": true,
-		"userConfirmedUseCompilerModuleSwitch": false
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.10.4",
-	"appid": "wx5a35be4e15614ade",
-	"projectname": "wx-mall-components",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": 3,
-			"list": [
-				{
-					"id": 0,
-					"name": "pages/cardSwiperPage/cardSwiperPage",
-					"pathName": "pages/cardSwiperPage/cardSwiperPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 1,
-					"name": "pages/inputPage/inputPage",
-					"pathName": "pages/inputPage/inputPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 2,
-					"name": "pages/richTextPage/richTextPage",
-					"pathName": "pages/richTextPage/richTextPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 3,
-					"name": "pages/dropdownSelectPage/dropdownSelectPage",
-					"pathName": "pages/dropdownSelectPage/dropdownSelectPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 4,
-					"name": "pages/datePickerPage/datePickerPage",
-					"pathName": "pages/datePickerPage/datePickerPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 5,
-					"name": "pages/orderPicinfoviewPage/orderPicinfoviewPage",
-					"pathName": "pages/orderPicinfoviewPage/orderPicinfoviewPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 6,
-					"name": "pages/selectTabPage/selectTabPage",
-					"pathName": "pages/selectTabPage/selectTabPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 7,
-					"name": "pages/gridPage/gridPage",
-					"pathName": "pages/gridPage/gridPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 8,
-					"name": "pages/lzButtonPage/lzButtonPage",
-					"pathName": "pages/lzButtonPage/lzButtonPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 9,
-					"name": "pages/richEditorPage/richEditorPage",
-					"pathName": "pages/richEditorPage/richEditorPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 10,
-					"name": "pages/productPicinfoviewPage/productPicinfoviewPage",
-					"pathName": "pages/productPicinfoviewPage/productPicinfoviewPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 11,
-					"name": "pages/toptipsPage/toptipsPage",
-					"pathName": "pages/toptipsPage/toptipsPage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 12,
-					"name": "pages/directoryPage/directoryPage",
-					"pathName": "pages/directoryPage/directoryPage",
-					"query": "",
-					"scene": null
-				}												
-			]
-		}
-	}
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.10.4",
+  "appid": "wx5a35be4e15614ade",
+  "projectname": "wx-mall-components",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 3,
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/cardSwiperPage/cardSwiperPage",
+          "pathName": "pages/cardSwiperPage/cardSwiperPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 1,
+          "name": "pages/inputPage/inputPage",
+          "pathName": "pages/inputPage/inputPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "pages/richTextPage/richTextPage",
+          "pathName": "pages/richTextPage/richTextPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 3,
+          "name": "pages/dropdownSelectPage/dropdownSelectPage",
+          "pathName": "pages/dropdownSelectPage/dropdownSelectPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "pages/datePickerPage/datePickerPage",
+          "pathName": "pages/datePickerPage/datePickerPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 5,
+          "name": "pages/orderPicinfoviewPage/orderPicinfoviewPage",
+          "pathName": "pages/orderPicinfoviewPage/orderPicinfoviewPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 6,
+          "name": "pages/selectTabPage/selectTabPage",
+          "pathName": "pages/selectTabPage/selectTabPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 7,
+          "name": "pages/gridPage/gridPage",
+          "pathName": "pages/gridPage/gridPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 8,
+          "name": "pages/lzButtonPage/lzButtonPage",
+          "pathName": "pages/lzButtonPage/lzButtonPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 9,
+          "name": "pages/richEditorPage/richEditorPage",
+          "pathName": "pages/richEditorPage/richEditorPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 10,
+          "name": "pages/productPicinfoviewPage/productPicinfoviewPage",
+          "pathName": "pages/productPicinfoviewPage/productPicinfoviewPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 11,
+          "name": "pages/toptipsPage/toptipsPage",
+          "pathName": "pages/toptipsPage/toptipsPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 12,
+          "name": "pages/directoryPage/directoryPage",
+          "pathName": "pages/directoryPage/directoryPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 13,
+          "name": "pages/richParsePage/richParsePage",
+          "pathName": "pages/richParsePage/richParsePage",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

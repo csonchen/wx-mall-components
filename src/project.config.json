@@ -149,7 +149,14 @@
 					"pathName": "pages/directoryPage/directoryPage",
 					"query": "",
 					"scene": null
-				}												
+				},
+				{
+					"id": 13,
+					"name": "pages/richParsePage/richParsePage",
+					"pathName": "pages/richParsePage/richParsePage",
+					"query": "",
+					"scene": null
+				}									
 			]
 		}
 	}
