@@ -1,7 +1,6 @@
 const path = require('path');
-const { htmlData } = require('./data');
-const html2json = require('html2json').html2json;
-const { getAllFiles, getFilterFiles, listComponents } = require('./tool/fileUtils');
+const { isWxmlImportComponent } = require('./tool/parseUtils');
+const { getAllFiles, getFilterFiles, listComponents, getFileJsonData } = require('./tool/fileUtils');
 const ObjectsToCsv = require('objects-to-csv');
 
 (async function() {
@@ -25,12 +24,16 @@ const ObjectsToCsv = require('objects-to-csv');
         directory: currentDir,
       }]
     } else {
+      // 输入wxml地址，转化为json标签对象
+      const fileJsonData = getFileJsonData(currentDir + `/${current}.wxml`)
       const childs = components.reduce((childAcc, { name, path }) => {
+        const used = isWxmlImportComponent(fileJsonData, name)
         return [...childAcc, {
           page: current,
           directory: currentDir,
           component: name,
           componentPath: path,
+          used: used ? 'true' : 'false',
         }]
       }, [])
       return [...acc, ...childs]
@@ -39,5 +42,5 @@ const ObjectsToCsv = require('objects-to-csv');
 
   // 导出csv文件
   const csv = new ObjectsToCsv(pageWithComponents)
-  await csv.toDisk(__dirname + '/component_used_stat.csv')
+  await csv.toDisk(__dirname + '/component_status_stat.csv')
 })()

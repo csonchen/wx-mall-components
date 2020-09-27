@@ -1,4 +1,5 @@
 const fs = require('fs');
+const html2json = require('html2json').html2json;
 
 /**
  * 获取目录下的所有文件名
@@ -87,9 +88,20 @@ const listComponents = (jsonFile) => {
   return componentList
 }
 
+/**
+ * 获取wxml文件的js表示对象
+ * @param {*} filePath 
+ */
+const getFileJsonData = (filePath) => {
+  const fileStr = fs.readFileSync(filePath, 'utf8')
+  const fileJsonData = html2json(fileStr)
+  return fileJsonData || {}
+}
+
 module.exports = {
   getFileName,
   getFilterFiles,
   getAllFiles,
   listComponents,
+  getFileJsonData,
 }
