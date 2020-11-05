@@ -93,9 +93,14 @@ const listComponents = (jsonFile) => {
  * @param {*} filePath 
  */
 const getFileJsonData = (filePath) => {
-  const fileStr = fs.readFileSync(filePath, 'utf8')
-  const fileJsonData = html2json(fileStr)
-  return fileJsonData || {}
+  try {
+    const fileStr = fs.readFileSync(filePath, 'utf8')
+    const fileJsonData = html2json(fileStr)
+    return fileJsonData || {}
+  } catch (error) {
+    console.log(filePath + '解析有误，没有成功导出')
+    return null
+  }
 }
 
 module.exports = {
