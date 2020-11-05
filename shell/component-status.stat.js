@@ -2,10 +2,11 @@ const path = require('path');
 const { isWxmlImportComponent } = require('./tool/parseUtils');
 const { getAllFiles, getFilterFiles, listComponents, getFileJsonData } = require('./tool/fileUtils');
 const ObjectsToCsv = require('objects-to-csv');
+const { mallProject: { entry, exportFileName } } = require('./config/config');
 
 (async function() {
   // 解析入口目录
-  const entryDir = path.resolve(__dirname + '/../dist/pages')
+  const entryDir = path.resolve(__dirname + '/..' + entry)
   const allFiles = getAllFiles(entryDir)
 
   if (allFiles.length === 0) return
@@ -42,5 +43,5 @@ const ObjectsToCsv = require('objects-to-csv');
 
   // 导出csv文件
   const csv = new ObjectsToCsv(pageWithComponents)
-  await csv.toDisk(__dirname + '/component_status_stat.csv')
+  await csv.toDisk(__dirname + exportFileName)
 })()
