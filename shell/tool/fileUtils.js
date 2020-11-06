@@ -2,14 +2,22 @@ const fs = require('fs');
 const html2json = require('html2json').html2json;
 
 /**
- * 获取目录下的所有文件名
- * @param {*} directory 
+ * 获取路径下的所有文件名
+ * @param {*} pathUrl 
+ * @param {*} checkFiletype 检查文件类型
  */
-const getAllFiles = (directory) => {
+const getAllFiles = (pathUrl, checkFiletype = false) => {
   let result = []
-  const files = fs.readdirSync(directory)
+
+  // 需要检查文件类型，并且是文件，直接返回单文件数组
+  if (checkFiletype && fs.statSync(pathUrl).isFile()) {
+    return [pathUrl]
+  }
+
+  // 目录类型则递归往下查找
+  const files = fs.readdirSync(pathUrl)
   for (let item of files) {
-    const path = directory + '/' + item
+    const path = pathUrl + '/' + item
     const isDir = fs.statSync(path).isDirectory()
     if (isDir) {
       result = [...result, ...getAllFiles(path)]

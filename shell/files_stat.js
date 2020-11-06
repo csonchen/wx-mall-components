@@ -13,6 +13,7 @@ const ObjectsToCsv = require('objects-to-csv');
 
   // 只保留图片的文件名数组
   const allImageFiles = imgFiles.map(imgItem => path.basename(imgItem))
+
   // 查找所有的wxml, js文件
   const allWxmlFiles = targetEntrys.reduce((acc, targetEntry) => {
     const targetDirPath = path.resolve(__dirname + '/..' + targetEntry)
@@ -23,6 +24,7 @@ const ObjectsToCsv = require('objects-to-csv');
     })
     return [...acc, ...allWxmlFiles]
   }, [])
+
   // 遍历图片集数组，查找文件是否有引入
   const result = allImageFiles.reduce((acc, imgName) => {
     const rowItems = allWxmlFiles.reduce((childAcc, filePath) => {
@@ -32,6 +34,7 @@ const ObjectsToCsv = require('objects-to-csv');
         existPath: filePath,
       }]
     }, [])
+    
     // 如果查找完毕为空，则说明没有引入到该图片
     return rowItems.length === 0 ? [...acc, {
       image: imgName,
