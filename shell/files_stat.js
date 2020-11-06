@@ -13,14 +13,17 @@ const ObjectsToCsv = require('objects-to-csv');
 
   // 只保留图片的文件名数组
   const allImageFiles = imgFiles.map(imgItem => path.basename(imgItem))
-  // 查找所有的wxml文件
+  // 查找所有的wxml, js文件
   const allWxmlFiles = targetEntrys.reduce((acc, targetEntry) => {
     const targetDirPath = path.resolve(__dirname + '/..' + targetEntry)
     const targetAllFiles = getAllFiles(targetDirPath)
-    const allWxmlFiles = targetAllFiles.filter(fileStr => fileStr.indexOf('.wxml') > -1)
+    const allWxmlFiles = targetAllFiles.filter(filePath => {
+      const extname = path.extname(filePath)
+      return ['.wxml', '.js'].indexOf(extname) > -1
+    })
     return [...acc, ...allWxmlFiles]
   }, [])
-  // 遍历图片集数组，查找wxml文件是否有引入
+  // 遍历图片集数组，查找文件是否有引入
   const result = allImageFiles.reduce((acc, imgName) => {
     const rowItems = allWxmlFiles.reduce((childAcc, filePath) => {
       const fileStr = fs.readFileSync(filePath, 'utf8')
