@@ -9,23 +9,28 @@ const html2json = require('html2json').html2json;
 const getAllFiles = (pathUrl, checkFiletype = false) => {
   let result = []
 
-  // 需要检查文件类型，并且是文件，直接返回单文件数组
-  if (checkFiletype && fs.statSync(pathUrl).isFile()) {
-    return [pathUrl]
-  }
-
-  // 目录类型则递归往下查找
-  const files = fs.readdirSync(pathUrl)
-  for (let item of files) {
-    const path = pathUrl + '/' + item
-    const isDir = fs.statSync(path).isDirectory()
-    if (isDir) {
-      result = [...result, ...getAllFiles(path)]
-    } else {
-      result.push(path)
+  try {
+    // 需要检查文件类型，并且是文件，直接返回单文件数组
+    if (checkFiletype && fs.statSync(pathUrl).isFile()) {
+      return [pathUrl]
     }
+
+    // 目录类型则递归往下查找
+    const files = fs.readdirSync(pathUrl)
+    for (let item of files) {
+      const path = pathUrl + '/' + item
+      const isDir = fs.statSync(path).isDirectory()
+      if (isDir) {
+        result = [...result, ...getAllFiles(path)]
+      } else {
+        result.push(path)
+      }
+    }
+    return result
+  } catch (error) {
+    console.log(error.message)
+    return []
   }
-  return result
 }
 
 /**

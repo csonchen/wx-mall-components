@@ -1,8 +1,11 @@
 const path = require('path');
 const fs = require('fs');
 const { rainbowProject: { 
-  // enterprise: { imagesEntry, targetEntrys, imageReportPath } 
-  public: { imagesEntry, targetEntrys, imageReportPath } 
+  enterprise: { 
+    imagesEntry, 
+    targetEntrys, 
+    imageReportPath,
+  },
 }} = require('./config/config');
 const { getAllFiles } = require('./tool/fileUtils');
 const ObjectsToCsv = require('objects-to-csv');
