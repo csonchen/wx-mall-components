@@ -1,5 +1,5 @@
 file,components
-f:\study\wx-mall-components/dist/pages/cardSwiperPage/cardSwiperPage.js,"[{""name"":""card-swiper"",""path"":""/components/card-swiper/card-swiper""},{""name"":""wxParse"",""path"":""/miniprogram_npm/wx-minicomponent/wxParse""}]"
+f:\study\wx-mall-components/dist/pages/cardSwiperPage/cardSwiperPage.js,"[{""name"":""card-swiper"",""path"":""/components/card-swiper/card-swiper""},{""name"":""wxParse"",""path"":""/miniprogram_npm/wx-minicomponent/wxParse""},{""name"":""grid"",""path"":""/components/grid/grid""}]"
 f:\study\wx-mall-components/dist/pages/datePickerPage/datePickerPage.js,"[{""name"":""date-picker"",""path"":""/components/date-picker/date-picker""}]"
 f:\study\wx-mall-components/dist/pages/directoryPage/directoryPage.js,"[{""name"":""side-directory"",""path"":""/components/side-directory/side-directory""},{""name"":""piclist-directory"",""path"":""/components/piclist-directory/piclist-directory""}]"
 f:\study\wx-mall-components/dist/pages/dropdownSelectPage/dropdownSelectPage.js,"[{""name"":""dropdown-select"",""path"":""/components/dropdown-select/dropdown-select""},{""name"":""wxParse"",""path"":""/miniprogram_npm/wx-minicomponent/wxParse""}]"

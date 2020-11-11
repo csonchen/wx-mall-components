@@ -1,12 +1,17 @@
 const path = require('path');
-const { isWxmlImportComponent } = require('./tool/parseUtils');
-const { getAllFiles, getFilterFiles, listComponents, getFileJsonData } = require('./tool/fileUtils');
+const { isWxmlImportComponent } = require('../tool/parseUtils');
+const { getAllFiles, getFilterFiles, listComponents, getFileJsonData } = require('../tool/fileUtils');
 const ObjectsToCsv = require('objects-to-csv');
-const { mallProject: { entry, exportFileName } } = require('./config/config');
+const chalk = require('chalk');
+const { component: { 
+  entry, 
+  exportPath,
+}} = require('../config/config');
 
 (async function() {
+  console.log(chalk.yellow(`正在分析项目组件引入路径，请等待....`))
   // 解析入口目录
-  const entryDir = path.resolve(__dirname + '/..' + entry)
+  const entryDir = path.resolve(__dirname + '/../..' + entry)
   const allFiles = getAllFiles(entryDir)
 
   if (allFiles.length === 0) return
@@ -42,6 +47,10 @@ const { mallProject: { entry, exportFileName } } = require('./config/config');
   }, [])
 
   // 导出csv文件
+  const exportPathUrl = `${__dirname}/../../${exportPath}`
   const csv = new ObjectsToCsv(pageWithComponents)
-  await csv.toDisk(__dirname + exportFileName)
+  await csv.toDisk(exportPathUrl)
+
+  console.log(chalk.green.bold('文件导出成功，导出路径为：'))
+  console.log(chalk.green.bold(`${path.resolve(exportPathUrl)}`))
 })()

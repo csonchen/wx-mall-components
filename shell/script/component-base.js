@@ -114,7 +114,7 @@ async function start() {
 
   // 导出csv文件
   const csv = new ObjectsToCsv(components)
-  await csv.toDisk(dirname + '/shell/component_stat.csv')
+  await csv.toDisk(dirname + '/shell/csv/components_base.csv')
 }
 
 // begin

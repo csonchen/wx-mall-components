@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "gulp watch",
-    "build": "cross-env NODE_ENV=production gulp"
+    "build": "cross-env NODE_ENV=production gulp",
+    "analyse-image": "node ./shell/script/image-stat.js",
+    "analyse-component": "node ./shell/script/component-stat.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,7 @@
     "gulp-stylus": "^2.7.0"
   },
   "devDependencies": {
+    "chalk": "^4.1.0",
     "html2json": "^1.0.2",
     "objects-to-csv": "^1.3.6"
   }
